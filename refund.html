@@ -1,94 +1,1466 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Refund Policy | KasiEats</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
 
-<style>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-body{
-font-family:Poppins,sans-serif;
-background:#f8f8f8;
-margin:0;
-}
+    <title>KaziEats | Refund Policy</title>
 
-.container{
-max-width:900px;
-margin:auto;
-background:white;
-padding:50px;
-line-height:1.8;
-}
+    <meta
+        name="description"
+        content="KaziEats Refund Policy covering cancelled orders, incorrect orders, payment errors and delivery issues."
+    >
 
-h1,h2{
-color:#ff6b00;
-}
+    <meta name="theme-color" content="#ff5c00">
 
-</style>
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f7f7f7;
+            color: #171717;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+            --orange: #ff5c00;
+            --orange-dark: #e64f00;
+            --orange-light: #fff3eb;
+
+            --black: #111111;
+            --text: #222222;
+            --gray: #666666;
+
+            --white: #ffffff;
+
+            --border: #eeeeee;
+
+            --max-width: 1050px;
+
+            --shadow:
+                0 15px 50px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* =====================================================
+           CONTAINER
+        ===================================================== */
+
+        .container {
+            width: min(100% - 40px, var(--max-width));
+            margin: 0 auto;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        nav {
+            height: 78px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+
+            color: var(--black);
+        }
+
+        .logo-box {
+            width: 44px;
+            height: 44px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 13px;
+
+            background: var(--orange);
+
+            color: white;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            box-shadow:
+                0 8px 22px rgba(255, 92, 0, 0.22);
+        }
+
+        .logo-text {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: var(--orange);
+        }
+
+
+        /* NAV LINKS */
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: #444;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--orange);
+        }
+
+
+        /* BACK BUTTON */
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 11px 20px;
+
+            border-radius: 999px;
+
+            background: var(--orange);
+
+            color: white;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            transition: 0.25s ease;
+        }
+
+        .back-home:hover {
+            background: var(--orange-dark);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .policy-hero {
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 75px 0 65px;
+
+            background:
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(255, 92, 0, 0.12),
+                    transparent 28%
+                ),
+                linear-gradient(
+                    180deg,
+                    #ffffff,
+                    #fffaf7
+                );
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .policy-hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 92, 0, 0.04);
+
+            right: -100px;
+            bottom: -150px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            max-width: 750px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 8px 14px;
+
+            border-radius: 999px;
+
+            background: var(--orange-light);
+
+            color: var(--orange);
+
+            font-size: 12px;
+            font-weight: 700;
+
+            margin-bottom: 17px;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: var(--orange);
+        }
+
+        .hero-content h1 {
+            font-size: clamp(38px, 6vw, 56px);
+
+            line-height: 1.1;
+
+            letter-spacing: -1.5px;
+
+            margin-bottom: 17px;
+        }
+
+        .hero-content h1 span {
+            color: var(--orange);
+        }
+
+        .hero-content p {
+            color: var(--gray);
+
+            font-size: 15px;
+
+            max-width: 650px;
+        }
+
+
+        /* =====================================================
+           POLICY AREA
+        ===================================================== */
+
+        .policy-section {
+            padding: 70px 0 100px;
+        }
+
+        .policy-layout {
+            display: grid;
+
+            grid-template-columns: 240px 1fr;
+
+            gap: 45px;
+
+            align-items: start;
+        }
+
+
+        /* =====================================================
+           TABLE OF CONTENTS
+        ===================================================== */
+
+        .toc {
+            position: sticky;
+            top: 105px;
+
+            background: white;
+
+            padding: 24px;
+
+            border-radius: 18px;
+
+            border: 1px solid var(--border);
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.04);
+        }
+
+        .toc h3 {
+            font-size: 14px;
+
+            margin-bottom: 15px;
+        }
+
+        .toc a {
+            display: block;
+
+            color: #777;
+
+            font-size: 12px;
+
+            padding: 7px 0;
+
+            transition: 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: var(--orange);
+
+            padding-left: 4px;
+        }
+
+
+        /* =====================================================
+           POLICY CARD
+        ===================================================== */
+
+        .policy-content {
+            background: white;
+
+            border-radius: 25px;
+
+            border: 1px solid var(--border);
+
+            padding: 50px;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        /* INTRO */
+
+        .policy-intro {
+            padding: 24px;
+
+            background: var(--orange-light);
+
+            border-left: 4px solid var(--orange);
+
+            border-radius: 14px;
+
+            margin-bottom: 40px;
+        }
+
+        .policy-intro strong {
+            display: block;
+
+            color: var(--orange);
+
+            font-size: 14px;
+
+            margin-bottom: 5px;
+        }
+
+        .policy-intro p {
+            color: #555;
+
+            font-size: 13px;
+        }
+
+
+        /* SECTIONS */
+
+        .policy-block {
+            padding: 30px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .policy-block:first-of-type {
+            padding-top: 0;
+        }
+
+        .policy-block:last-child {
+            border-bottom: none;
+
+            padding-bottom: 0;
+        }
+
+        .policy-block h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            font-size: 22px;
+
+            color: var(--black);
+
+            margin-bottom: 13px;
+        }
+
+        .section-number {
+            width: 34px;
+            height: 34px;
+
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 10px;
+
+            background: var(--orange-light);
+
+            color: var(--orange);
+
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .policy-block p {
+            color: #606060;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           REFUND HIGHLIGHT CARDS
+        ===================================================== */
+
+        .refund-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 22px;
+        }
+
+        .refund-card {
+            padding: 22px;
+
+            background: #fafafa;
+
+            border: 1px solid var(--border);
+
+            border-radius: 16px;
+
+            transition: 0.25s ease;
+        }
+
+        .refund-card:hover {
+            border-color: rgba(255, 92, 0, 0.3);
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .refund-icon {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 11px;
+
+            background: var(--orange-light);
+
+            color: var(--orange);
+
+            font-size: 17px;
+
+            margin-bottom: 13px;
+        }
+
+        .refund-card h3 {
+            font-size: 15px;
+
+            margin-bottom: 6px;
+        }
+
+        .refund-card p {
+            font-size: 12px;
+
+            color: #777;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           SUPPORT BOX
+        ===================================================== */
+
+        .support-box {
+            margin-top: 25px;
+
+            padding: 28px;
+
+            border-radius: 18px;
+
+            background: var(--black);
+
+            color: white;
+        }
+
+        .support-box h3 {
+            font-size: 19px;
+
+            margin-bottom: 7px;
+        }
+
+        .support-box p {
+            color: #aaa;
+
+            font-size: 13px;
+
+            margin-bottom: 18px;
+        }
+
+        .support-email {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 11px 17px;
+
+            border-radius: 10px;
+
+            background: var(--orange);
+
+            color: white;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            transition: 0.2s ease;
+        }
+
+        .support-email:hover {
+            background: var(--orange-dark);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #111;
+
+            color: #aaa;
+
+            padding: 60px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+            gap: 40px;
+        }
+
+        .footer-brand h3 {
+            color: white;
+
+            font-size: 21px;
+
+            margin-bottom: 10px;
+        }
+
+        .footer-brand h3 span {
+            color: var(--orange);
+        }
+
+        .footer-brand p {
+            max-width: 330px;
+
+            color: #888;
+
+            font-size: 12px;
+
+            line-height: 1.8;
+        }
+
+        footer h4 {
+            color: white;
+
+            font-size: 13px;
+
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            display: block;
+
+            color: #999;
+
+            font-size: 12px;
+
+            margin-bottom: 8px;
+
+            transition: 0.2s ease;
+        }
+
+        footer a:hover {
+            color: var(--orange);
+        }
+
+        .footer-payment {
+            color: #999;
+
+            font-size: 12px;
+
+            margin-bottom: 7px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+            margin-top: 45px;
+
+            padding-top: 20px;
+
+            border-top: 1px solid #292929;
+        }
+
+        .copyright,
+        .tagline {
+            color: #666;
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .policy-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc {
+                position: static;
+            }
+
+            .toc-links {
+                display: grid;
+
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 0 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .container {
+                width: min(100% - 28px, var(--max-width));
+            }
+
+            nav {
+                height: 70px;
+            }
+
+            .logo-box {
+                width: 40px;
+                height: 40px;
+
+                border-radius: 11px;
+            }
+
+            .logo-text {
+                font-size: 19px;
+            }
+
+            .back-home {
+                padding: 10px 15px;
+
+                font-size: 12px;
+            }
+
+            .policy-hero {
+                padding: 55px 0 50px;
+            }
+
+            .hero-content h1 {
+                font-size: 40px;
+            }
+
+            .policy-section {
+                padding: 45px 0 70px;
+            }
+
+            .policy-content {
+                padding: 27px 22px;
+
+                border-radius: 20px;
+            }
+
+            .toc {
+                padding: 20px;
+            }
+
+            .toc-links {
+                grid-template-columns: 1fr;
+            }
+
+            .policy-block h2 {
+                font-size: 19px;
+            }
+
+            .refund-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+
+                gap: 28px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+        }
+
+    </style>
 
 </head>
 
+
 <body>
 
-<div class="container">
 
-<h1>Refund Policy</h1>
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-<h2>Cancelled Orders</h2>
+<header>
 
-<p>
+    <div class="container">
 
-Refunds may be issued if an order is cancelled before preparation begins.
+        <nav>
 
-</p>
 
-<h2>Incorrect Orders</h2>
+            <a href="index.html" class="logo">
 
-<p>
+                <div class="logo-box">
+                    KE
+                </div>
 
-If you receive incorrect or incomplete items, please contact support as soon as possible.
+                <div class="logo-text">
+                    Kazi<span>Eats</span>
+                </div>
 
-</p>
+            </a>
 
-<h2>Payment Errors</h2>
 
-<p>
+            <div class="nav-links">
 
-Duplicate or failed payments will be investigated and refunded where applicable.
+                <a href="index.html">
+                    Home
+                </a>
 
-</p>
+                <a href="index.html#about">
+                    About
+                </a>
 
-<h2>Delivery Issues</h2>
+                <a href="index.html#contact">
+                    Contact
+                </a>
 
-<p>
+            </div>
 
-Refund requests relating to delivery problems will be reviewed individually.
 
-</p>
+            <a
+                href="index.html"
+                class="back-home"
+            >
+                ← Back Home
+            </a>
 
-<h2>Support</h2>
 
-<p>
+        </nav>
 
-Email:
+    </div>
 
-support@kasieats.co.za
+</header>
 
-</p>
 
-<p>
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-<a href="index.html">
+<section class="policy-hero">
 
-← Back Home
+    <div class="container">
 
-</a>
+        <div class="hero-content">
 
-</p>
+            <div class="badge">
 
-</div>
+                <span class="badge-dot"></span>
+
+                KaziEats Legal
+
+            </div>
+
+
+            <h1>
+                Refund <span>Policy</span>
+            </h1>
+
+
+            <p>
+                Our refund policy explains how KaziEats
+                handles cancelled orders, incorrect orders,
+                payment errors and delivery-related issues.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     POLICY
+===================================================== -->
+
+<section class="policy-section">
+
+    <div class="container">
+
+        <div class="policy-layout">
+
+
+            <!-- TABLE OF CONTENTS -->
+
+            <aside class="toc">
+
+                <h3>
+                    On This Page
+                </h3>
+
+
+                <div class="toc-links">
+
+                    <a href="#cancelled">
+                        01. Cancelled Orders
+                    </a>
+
+                    <a href="#incorrect">
+                        02. Incorrect Orders
+                    </a>
+
+                    <a href="#payments">
+                        03. Payment Errors
+                    </a>
+
+                    <a href="#delivery">
+                        04. Delivery Issues
+                    </a>
+
+                    <a href="#support">
+                        05. Support
+                    </a>
+
+                </div>
+
+            </aside>
+
+
+            <!-- POLICY CONTENT -->
+
+            <main class="policy-content">
+
+
+                <!-- INTRO -->
+
+                <div class="policy-intro">
+
+                    <strong>
+                        Important
+                    </strong>
+
+                    <p>
+                        Refund requests are reviewed according
+                        to the circumstances of each order and
+                        the applicable KaziEats policies.
+                    </p>
+
+                </div>
+
+
+                <!-- CANCELLED ORDERS -->
+
+                <div
+                    class="policy-block"
+                    id="cancelled"
+                >
+
+                    <h2>
+
+                        <span class="section-number">
+                            01
+                        </span>
+
+                        Cancelled Orders
+
+                    </h2>
+
+
+                    <p>
+                        Refunds may be issued if an order is
+                        cancelled before preparation begins.
+                    </p>
+
+                </div>
+
+
+                <!-- INCORRECT ORDERS -->
+
+                <div
+                    class="policy-block"
+                    id="incorrect"
+                >
+
+                    <h2>
+
+                        <span class="section-number">
+                            02
+                        </span>
+
+                        Incorrect Orders
+
+                    </h2>
+
+
+                    <p>
+                        If you receive incorrect or incomplete
+                        items, please contact KaziEats support
+                        as soon as possible so that the issue
+                        can be reviewed and resolved.
+                    </p>
+
+
+                    <div class="refund-grid">
+
+
+                        <div class="refund-card">
+
+                            <div class="refund-icon">
+                                ✓
+                            </div>
+
+                            <h3>
+                                Incorrect Item
+                            </h3>
+
+                            <p>
+                                Let us know if an item you received
+                                differs from what you ordered.
+                            </p>
+
+                        </div>
+
+
+                        <div class="refund-card">
+
+                            <div class="refund-icon">
+                                +
+                            </div>
+
+                            <h3>
+                                Missing Item
+                            </h3>
+
+                            <p>
+                                Contact support if part of your
+                                order was missing upon delivery.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT ERRORS -->
+
+                <div
+                    class="policy-block"
+                    id="payments"
+                >
+
+                    <h2>
+
+                        <span class="section-number">
+                            03
+                        </span>
+
+                        Payment Errors
+
+                    </h2>
+
+
+                    <p>
+                        Duplicate or failed payments will be
+                        investigated and refunded where applicable.
+                    </p>
+
+
+                    <div class="refund-grid">
+
+
+                        <div class="refund-card">
+
+                            <div class="refund-icon">
+                                ↻
+                            </div>
+
+                            <h3>
+                                Duplicate Payment
+                            </h3>
+
+                            <p>
+                                If you believe you were charged
+                                more than once for the same order,
+                                contact support for investigation.
+                            </p>
+
+                        </div>
+
+
+                        <div class="refund-card">
+
+                            <div class="refund-icon">
+                                R
+                            </div>
+
+                            <h3>
+                                Failed Payment
+                            </h3>
+
+                            <p>
+                                Failed or unsuccessful transactions
+                                will be reviewed where applicable.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- DELIVERY ISSUES -->
+
+                <div
+                    class="policy-block"
+                    id="delivery"
+                >
+
+                    <h2>
+
+                        <span class="section-number">
+                            04
+                        </span>
+
+                        Delivery Issues
+
+                    </h2>
+
+
+                    <p>
+                        Refund requests relating to delivery
+                        problems will be reviewed individually.
+                        Customers should contact KaziEats support
+                        as soon as possible after experiencing
+                        a delivery-related problem.
+                    </p>
+
+
+                    <div class="refund-grid">
+
+
+                        <div class="refund-card">
+
+                            <div class="refund-icon">
+                                !
+                            </div>
+
+                            <h3>
+                                Delayed Delivery
+                            </h3>
+
+                            <p>
+                                Report significant delivery delays
+                                so our support team can investigate
+                                the circumstances.
+                            </p>
+
+                        </div>
+
+
+                        <div class="refund-card">
+
+                            <div class="refund-icon">
+                                ↗
+                            </div>
+
+                            <h3>
+                                Delivery Problem
+                            </h3>
+
+                            <p>
+                                Problems affecting the successful
+                                delivery of your order can be
+                                reported to our support team.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUPPORT -->
+
+                <div
+                    class="policy-block"
+                    id="support"
+                >
+
+                    <h2>
+
+                        <span class="section-number">
+                            05
+                        </span>
+
+                        Support
+
+                    </h2>
+
+
+                    <p>
+                        If you believe you qualify for a refund
+                        or have an issue with your order, please
+                        contact KaziEats support and provide your
+                        order details and a description of the issue.
+                    </p>
+
+
+                    <div class="support-box">
+
+                        <h3>
+                            Need Help With Your Order?
+                        </h3>
+
+                        <p>
+                            Our support team can help review
+                            refund requests and order-related issues.
+                        </p>
+
+
+                        <a
+                            href="mailto:Kazieats012@gmail.com"
+                            class="support-email"
+                        >
+                            Email KaziEats Support
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </main>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <h3>
+                    Kazi<span>Eats</span>
+                </h3>
+
+                <p>
+                    South Africa's local food delivery
+                    platform connecting customers,
+                    restaurants and independent drivers.
+                </p>
+
+            </div>
+
+
+            <!-- COMPANY -->
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About Us
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- LEGAL -->
+
+            <div>
+
+                <h4>
+                    Legal
+                </h4>
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms & Conditions
+                </a>
+
+                <a href="refund.html">
+                    Refund Policy
+                </a>
+
+                <a href="delivery-policy.html">
+                    Delivery Policy
+                </a>
+
+            </div>
+
+
+            <!-- PAYMENTS -->
+
+            <div>
+
+                <h4>
+                    Payments
+                </h4>
+
+                <div class="footer-payment">
+                    ✓ Yoco
+                </div>
+
+                <div class="footer-payment">
+                    ✓ Visa
+                </div>
+
+                <div class="footer-payment">
+                    ✓ Mastercard
+                </div>
+
+                <div class="footer-payment">
+                    ✓ Cash on Delivery
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="copyright">
+
+                © <span id="year"></span>
+                KaziEats. All Rights Reserved.
+
+            </div>
+
+
+            <div class="tagline">
+
+                Local Flavor. Delivered Fast.
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    /*
+       Automatically update copyright year
+    */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /*
+       Smooth scrolling for table of contents
+    */
+
+    document.querySelectorAll('.toc a').forEach(link => {
+
+        link.addEventListener('click', function(event) {
+
+            const target =
+                document.querySelector(
+                    this.getAttribute('href')
+                );
+
+            if (target) {
+
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+
+        });
+
+    });
+
+</script>
+
 
 </body>
+
 </html>

@@ -1,95 +1,1211 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Terms & Conditions | KasiEats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Kazi Eats | Terms of Service</title>
 
-<style>
+    <meta
+        name="description"
+        content="Read the Kazi Eats Terms of Service governing the use of the Kazi Eats food delivery platform."
+    >
 
-body{
-font-family:Poppins,sans-serif;
-background:#f7f7f7;
-margin:0;
-color:#333;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:50px;
-background:white;
-line-height:1.8;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-h1,h2{
-color:#ff6b00;
-}
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
 
-</style>
+            background: #ffffff;
+            color: #171717;
+            line-height: 1.7;
+        }
 
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .header-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 18px 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            text-decoration: none;
+
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -0.8px;
+
+            color: #111111;
+        }
+
+        .logo span {
+            color: #ff5c00;
+        }
+
+        .back-button {
+            text-decoration: none;
+
+            color: #111111;
+
+            border: 1px solid #dddddd;
+
+            padding: 9px 18px;
+
+            border-radius: 999px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background: #111111;
+            color: #ffffff;
+            border-color: #111111;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background: #fafafa;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+
+            padding: 80px 24px 70px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 16px;
+
+            color: #ff5c00;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 6vw, 64px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2.5px;
+
+            color: #111111;
+
+            margin-bottom: 18px;
+        }
+
+        .updated {
+            color: #777777;
+            font-size: 14px;
+        }
+
+        /* =========================
+           CONTENT
+        ========================= */
+
+        .page {
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 60px 24px 100px;
+        }
+
+        .intro {
+            font-size: 17px;
+
+            color: #4b4b4b;
+
+            margin-bottom: 50px;
+        }
+
+        .intro p {
+            margin-bottom: 18px;
+        }
+
+        /* =========================
+           TABLE OF CONTENTS
+        ========================= */
+
+        .contents {
+            background: #f7f7f7;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 18px;
+
+            padding: 28px;
+
+            margin-bottom: 60px;
+        }
+
+        .contents h2 {
+            font-size: 18px;
+
+            margin-bottom: 18px;
+
+            color: #111111;
+        }
+
+        .contents ul {
+            list-style: none;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 10px 24px;
+        }
+
+        .contents a {
+            color: #555555;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            transition: color 0.2s ease;
+        }
+
+        .contents a:hover {
+            color: #ff5c00;
+        }
+
+        /* =========================
+           POLICY SECTIONS
+        ========================= */
+
+        .terms-section {
+            padding: 50px 0;
+
+            border-top: 1px solid #eeeeee;
+
+            scroll-margin-top: 100px;
+        }
+
+        .terms-section:first-of-type {
+            border-top: none;
+        }
+
+        .terms-section h2 {
+            font-size: 28px;
+
+            line-height: 1.25;
+
+            letter-spacing: -0.6px;
+
+            color: #111111;
+
+            margin-bottom: 20px;
+        }
+
+        .terms-section h3 {
+            font-size: 18px;
+
+            color: #111111;
+
+            margin: 28px 0 8px;
+        }
+
+        .terms-section p {
+            color: #555555;
+
+            margin-bottom: 16px;
+        }
+
+        .terms-section ul {
+            padding-left: 22px;
+
+            margin: 18px 0;
+
+            color: #555555;
+        }
+
+        .terms-section li {
+            margin-bottom: 10px;
+
+            padding-left: 5px;
+        }
+
+        .terms-section strong {
+            color: #222222;
+        }
+
+        /* =========================
+           HIGHLIGHT BOX
+        ========================= */
+
+        .highlight-box {
+            background: #f7f7f7;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 16px;
+
+            padding: 24px;
+
+            margin-top: 24px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+
+            color: #555555;
+        }
+
+        /* =========================
+           WARNING / IMPORTANT
+        ========================= */
+
+        .important-box {
+            background: #fff8f4;
+
+            border-left: 4px solid #ff5c00;
+
+            border-radius: 0 12px 12px 0;
+
+            padding: 20px;
+
+            margin-top: 25px;
+        }
+
+        .important-box p {
+            margin: 0;
+
+            font-size: 14px;
+
+            color: #555555;
+        }
+
+        /* =========================
+           CONTACT BOX
+        ========================= */
+
+        .contact-box {
+            background: #111111;
+
+            color: #ffffff;
+
+            border-radius: 20px;
+
+            padding: 32px;
+
+            margin-top: 20px;
+        }
+
+        .contact-box h2 {
+            color: #ffffff;
+
+            margin-bottom: 12px;
+        }
+
+        .contact-box p {
+            color: #bdbdbd;
+        }
+
+        .contact-box a {
+            color: #ff7a32;
+
+            text-decoration: none;
+
+            font-weight: 600;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+            background: #111111;
+
+            color: #999999;
+
+            padding: 35px 24px;
+        }
+
+        .footer-container {
+            max-width: 1180px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .footer p {
+            font-size: 13px;
+        }
+
+        .footer-links {
+            display: flex;
+
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #aaaaaa;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            .header-container {
+                padding: 15px 18px;
+            }
+
+            .logo {
+                font-size: 21px;
+            }
+
+            .back-button {
+                padding: 8px 14px;
+
+                font-size: 13px;
+            }
+
+            .hero-container {
+                padding: 55px 20px 50px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1.8px;
+            }
+
+            .page {
+                padding: 45px 20px 70px;
+            }
+
+            .contents {
+                padding: 22px;
+            }
+
+            .contents ul {
+                grid-template-columns: 1fr;
+            }
+
+            .terms-section {
+                padding: 40px 0;
+            }
+
+            .terms-section h2 {
+                font-size: 24px;
+            }
+
+            .contact-box {
+                padding: 25px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-<h1>Terms & Conditions</h1>
+    <header class="header">
 
-<p>
+        <div class="header-container">
 
-By using KasiEats, you agree to these Terms and Conditions.
+            <a href="/" class="logo">
+                KAZI<span>EATS</span>
+            </a>
 
-</p>
+            <a href="/" class="back-button">
+                Back to Home
+            </a>
 
-<h2>Orders</h2>
+        </div>
 
-<p>
+    </header>
 
-Orders are subject to restaurant acceptance and product availability.
 
-</p>
+    <!-- =========================
+         HERO
+    ========================== -->
 
-<h2>Payments</h2>
+    <section class="hero">
 
-<p>
+        <div class="hero-container">
 
-Payments are securely processed through approved payment providers.
+            <span class="eyebrow">
+                Legal
+            </span>
 
-</p>
+            <h1>
+                Terms of Service
+            </h1>
 
-<h2>Delivery</h2>
+            <p class="updated">
+                Last updated: January 2026
+            </p>
 
-<p>
+        </div>
 
-Estimated delivery times are approximate and may vary because of weather, traffic, restaurant preparation times or other circumstances.
+    </section>
 
-</p>
 
-<h2>Accounts</h2>
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
 
-<p>
+    <main class="page">
 
-Users are responsible for maintaining accurate account information and protecting their login credentials.
 
-</p>
+        <!-- INTRODUCTION -->
 
-<h2>Liability</h2>
+        <div class="intro">
 
-<p>
+            <p>
+                Welcome to Kazi Eats. These Terms of Service ("Terms")
+                govern your access to and use of the Kazi Eats mobile
+                application, website, and related services.
+            </p>
 
-KasiEats acts as a platform connecting customers, restaurants and delivery partners.
+            <p>
+                By accessing or using Kazi Eats, you agree to be bound by
+                these Terms. If you do not agree with these Terms, please
+                do not use the Kazi Eats platform.
+            </p>
 
-</p>
+        </div>
 
-<p>
 
-<a href="index.html">← Back Home</a>
+        <!-- TABLE OF CONTENTS -->
 
-</p>
+        <div class="contents">
 
-</div>
+            <h2>
+                Contents
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="#what-is-kazi-eats">
+                        1. What Is Kazi Eats?
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#account">
+                        2. Account Registration
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#orders">
+                        3. Placing Orders
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#delivery">
+                        4. Delivery Rules
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#payments">
+                        5. Payments and Fees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#refunds">
+                        6. Refunds and Cancellations
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#privacy">
+                        7. Privacy and POPIA
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#conduct">
+                        8. User Conduct
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#liability">
+                        9. Limitation of Liability
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#changes">
+                        10. Changes to These Terms
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- SECTION 1 -->
+
+        <section
+            class="terms-section"
+            id="what-is-kazi-eats"
+        >
+
+            <h2>
+                1. What Is Kazi Eats?
+            </h2>
+
+            <p>
+                Kazi Eats is a mobile-based food delivery platform that
+                connects customers with local township restaurants,
+                food vendors, and independent delivery drivers.
+            </p>
+
+            <div class="highlight-box">
+
+                <p>
+                    <strong>Kazi Eats does not prepare, cook, or package
+                    food.</strong>
+                    Kazi Eats provides the technology and platform that
+                    enables food ordering and delivery coordination between
+                    customers, restaurants, and delivery drivers.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 2 -->
+
+        <section
+            class="terms-section"
+            id="account"
+        >
+
+            <h2>
+                2. Account Registration
+            </h2>
+
+            <p>
+                To use certain Kazi Eats services, you may be required to
+                create an account and provide accurate and complete
+                information.
+            </p>
+
+            <p>
+                This may include:
+            </p>
+
+            <ul>
+
+                <li>
+                    Your real name.
+                </li>
+
+                <li>
+                    A valid mobile phone number.
+                </li>
+
+                <li>
+                    Your correct delivery location.
+                </li>
+
+            </ul>
+
+            <p>
+                You are responsible for ensuring that the information
+                associated with your account remains accurate and up to date.
+            </p>
+
+            <p>
+                You are also responsible for maintaining the security of
+                your account and any login credentials associated with it.
+            </p>
+
+            <p>
+                You must be at least 12 years old to use Kazi Eats unless
+                the use of the platform by a younger person is permitted
+                with the consent of a parent or legal guardian and applicable
+                law.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 3 -->
+
+        <section
+            class="terms-section"
+            id="orders"
+        >
+
+            <h2>
+                3. Placing Orders
+            </h2>
+
+            <p>
+                When you place an order through Kazi Eats, the order is
+                submitted to the selected restaurant for acceptance.
+            </p>
+
+            <p>
+                An order becomes binding between you and the restaurant
+                once the restaurant accepts the order, subject to these
+                Terms and any applicable consumer protection laws.
+            </p>
+
+            <p>
+                Prices displayed for food items relate to the items
+                themselves. Applicable delivery fees, service fees, or
+                other charges will be displayed at checkout where applicable.
+            </p>
+
+            <div class="important-box">
+
+                <p>
+                    <strong>Important:</strong>
+                    Restaurant availability, menu items, prices, preparation
+                    times, and food quality are primarily the responsibility
+                    of the restaurant providing the food.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 4 -->
+
+        <section
+            class="terms-section"
+            id="delivery"
+        >
+
+            <h2>
+                4. Delivery Rules
+            </h2>
+
+            <p>
+                Due to informal or changing addressing systems in some
+                township areas, customers are responsible for providing
+                accurate delivery information.
+            </p>
+
+            <p>
+                Customers may be required to provide a GPS location,
+                physical address, landmarks, directions, or other information
+                that helps the delivery driver locate the delivery address.
+            </p>
+
+            <p>
+                Customers must be available at the delivery location to
+                receive their order.
+            </p>
+
+            <h3>
+                Delivery Waiting Period
+            </h3>
+
+            <p>
+                Drivers may wait for a maximum of 10 minutes after arriving
+                at the designated delivery location.
+            </p>
+
+            <p>
+                If the customer cannot be reached or fails to collect the
+                order within the applicable waiting period, the order may
+                be cancelled or otherwise handled in accordance with the
+                circumstances of the order.
+            </p>
+
+            <p>
+                Where permitted by applicable law and the circumstances of
+                the cancellation, an electronic payment may not be refundable.
+                A future-order penalty of R20 may also apply where such a
+                charge has been clearly communicated to the customer.
+            </p>
+
+            <h3>
+                Respect for Drivers
+            </h3>
+
+            <p>
+                Kazi Eats delivery drivers are members of the communities
+                in which they operate and must always be treated with
+                courtesy and respect.
+            </p>
+
+            <p>
+                Harassment, threats, intimidation, discrimination, or
+                abusive behaviour towards drivers may result in account
+                suspension or termination.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 5 -->
+
+        <section
+            class="terms-section"
+            id="payments"
+        >
+
+            <h2>
+                5. Payments and Fees
+            </h2>
+
+            <p>
+                Depending on availability, Kazi Eats may support payment
+                methods including:
+            </p>
+
+            <ul>
+
+                <li>
+                    Cash on delivery.
+                </li>
+
+                <li>
+                    Card payments.
+                </li>
+
+                <li>
+                    Mobile wallet payments.
+                </li>
+
+                <li>
+                    Other payment methods made available through the
+                    platform.
+                </li>
+
+            </ul>
+
+            <p>
+                Delivery fees compensate delivery drivers for the time,
+                distance, fuel, and other costs associated with delivering
+                an order.
+            </p>
+
+            <p>
+                Service fees, where applicable, support the operation,
+                maintenance, development, and administration of the Kazi
+                Eats platform.
+            </p>
+
+            <p>
+                All applicable charges will be presented to the customer
+                before an order is confirmed where reasonably possible.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 6 -->
+
+        <section
+            class="terms-section"
+            id="refunds"
+        >
+
+            <h2>
+                6. Refunds and Cancellations
+            </h2>
+
+            <h3>
+                Order Cancellations
+            </h3>
+
+            <p>
+                Orders may generally only be cancelled within 5 minutes of
+                being placed or before food preparation has begun,
+                whichever occurs first.
+            </p>
+
+            <p>
+                Customers wishing to cancel an order should contact the
+                restaurant or use the available in-app support functionality
+                and provide the relevant order code.
+            </p>
+
+            <h3>
+                Incorrect or Missing Items
+            </h3>
+
+            <p>
+                Incorrect, damaged, or missing items should be reported
+                through Kazi Eats in-app support within 2 hours of delivery.
+            </p>
+
+            <h3>
+                Refunds
+            </h3>
+
+            <p>
+                Where a refund is approved, it will generally be processed
+                to the original payment method within 48 hours, subject to
+                the payment provider's processing times.
+            </p>
+
+            <p>
+                Refund requests may require a valid reason and supporting
+                information where appropriate.
+            </p>
+
+            <div class="important-box">
+
+                <p>
+                    Refunds are subject to applicable consumer protection
+                    laws and the specific circumstances of the order.
+                    Nothing in these Terms is intended to remove rights
+                    that cannot legally be excluded.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 7 -->
+
+        <section
+            class="terms-section"
+            id="privacy"
+        >
+
+            <h2>
+                7. Privacy and POPIA Compliance
+            </h2>
+
+            <p>
+                Kazi Eats respects the privacy of its users and processes
+                personal information in accordance with applicable privacy
+                laws, including the Protection of Personal Information Act
+                4 of 2013 ("POPIA").
+            </p>
+
+            <p>
+                Personal information may include your name, mobile number,
+                delivery address, location information, order information,
+                and other information necessary to provide Kazi Eats
+                services.
+            </p>
+
+            <p>
+                For more information about how Kazi Eats collects, uses,
+                stores, and protects personal information, please read our
+                Privacy Policy.
+            </p>
+
+            <div class="highlight-box">
+
+                <p>
+                    <a
+                        href="/privacy-policy.html"
+                        style="color: #ff5c00; text-decoration: none; font-weight: 700;"
+                    >
+                        View Kazi Eats Privacy Policy →
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 8 -->
+
+        <section
+            class="terms-section"
+            id="conduct"
+        >
+
+            <h2>
+                8. User Conduct
+            </h2>
+
+            <p>
+                Users must use the Kazi Eats platform responsibly and
+                lawfully.
+            </p>
+
+            <p>
+                Users may not:
+            </p>
+
+            <ul>
+
+                <li>
+                    Create fraudulent or misleading accounts.
+                </li>
+
+                <li>
+                    Provide false information for the purpose of obtaining
+                    services or promotions.
+                </li>
+
+                <li>
+                    Abuse promotional offers, discounts, coupons, or rewards.
+                </li>
+
+                <li>
+                    Harass, threaten, intimidate, or abuse drivers,
+                    restaurant staff, Kazi Eats employees, or other users.
+                </li>
+
+                <li>
+                    Attempt to interfere with, damage, or gain unauthorised
+                    access to the Kazi Eats platform.
+                </li>
+
+                <li>
+                    Use the platform for unlawful purposes.
+                </li>
+
+            </ul>
+
+            <p>
+                Kazi Eats reserves the right to suspend or terminate accounts
+                that violate these Terms or otherwise misuse the platform,
+                subject to applicable law.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 9 -->
+
+        <section
+            class="terms-section"
+            id="liability"
+        >
+
+            <h2>
+                9. Limitation of Liability
+            </h2>
+
+            <p>
+                Kazi Eats provides technology that facilitates food ordering
+                and delivery coordination. Kazi Eats does not prepare,
+                cook, package, or directly control the preparation of food
+                supplied by restaurants.
+            </p>
+
+            <p>
+                To the extent permitted by applicable law, Kazi Eats is not
+                responsible for food preparation, food quality, ingredients,
+                allergens, or illness arising from food supplied by a
+                restaurant.
+            </p>
+
+            <p>
+                Restaurants are responsible for preparing and supplying food
+                in accordance with applicable laws and requirements.
+            </p>
+
+            <p>
+                Kazi Eats may also experience delays caused by circumstances
+                outside its reasonable control, including severe weather,
+                road closures, traffic conditions, public safety concerns,
+                technical failures, or other circumstances affecting
+                delivery operations.
+            </p>
+
+            <div class="important-box">
+
+                <p>
+                    Nothing in these Terms limits or excludes any liability
+                    or consumer right that cannot legally be limited or
+                    excluded under applicable South African law.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 10 -->
+
+        <section
+            class="terms-section"
+            id="changes"
+        >
+
+            <h2>
+                10. Changes to These Terms
+            </h2>
+
+            <p>
+                Kazi Eats may update or amend these Terms from time to time
+                to reflect changes to the platform, services, business
+                practices, or applicable legal requirements.
+            </p>
+
+            <p>
+                Where appropriate, users may be notified of material changes
+                through the Kazi Eats application, website, or official
+                communication channels.
+            </p>
+
+            <p>
+                Your continued use of Kazi Eats after updated Terms become
+                effective constitutes acceptance of the updated Terms to the
+                extent permitted by applicable law.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="terms-section">
+
+            <div class="contact-box">
+
+                <h2>
+                    Questions About These Terms?
+                </h2>
+
+                <p>
+                    If you have questions about these Terms of Service,
+                    please contact Kazi Eats using the contact details
+                    provided on the official Kazi Eats website.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL NOTICE -->
+
+        <div class="important-box">
+
+            <p>
+                <strong>Last updated:</strong> January 2026
+                <br>
+                These Terms of Service should be reviewed and updated
+                whenever Kazi Eats changes its services, payment methods,
+                delivery policies, or applicable legal requirements.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <p>
+                © 2026 Kazi Eats. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="/privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="/terms.html">
+                    Terms of Service
+                </a>
+
+                <a href="/">
+                    Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
+```

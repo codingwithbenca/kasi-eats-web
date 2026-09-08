@@ -1,0 +1,3480 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Become a KaziEats Restaurant Partner</title>
+
+<meta
+    name="description"
+    content="Join KaziEats and grow your restaurant with local customers, delivery services, marketing and increased visibility."
+>
+
+<meta
+    name="theme-color"
+    content="#ff5c00"
+>
+
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+>
+
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+
+<style>
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #ffffff;
+        color: #171717;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+        font-family: inherit;
+    }
+
+
+    /* =========================================================
+       VARIABLES
+    ========================================================= */
+
+    :root {
+
+        --orange: #ff5c00;
+        --orange-dark: #e64f00;
+        --orange-light: #fff3eb;
+
+        --black: #111111;
+        --dark: #181818;
+
+        --text: #222222;
+        --gray: #666666;
+        --muted: #888888;
+
+        --light: #fafafa;
+        --light-gray: #f6f6f6;
+
+        --border: #eeeeee;
+
+        --white: #ffffff;
+
+        --max-width: 1180px;
+
+        --shadow-sm:
+            0 8px 25px rgba(0, 0, 0, 0.05);
+
+        --shadow-md:
+            0 15px 45px rgba(0, 0, 0, 0.08);
+
+        --shadow-lg:
+            0 25px 70px rgba(0, 0, 0, 0.12);
+    }
+
+
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
+    .container {
+        width: min(100% - 40px, var(--max-width));
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 100px 0;
+    }
+
+    .section-header {
+        max-width: 700px;
+        margin: 0 auto 55px;
+        text-align: center;
+    }
+
+    .section-label {
+        display: inline-flex;
+        align-items: center;
+
+        padding: 8px 15px;
+
+        border-radius: 999px;
+
+        background: var(--orange-light);
+        color: var(--orange);
+
+        font-size: 12px;
+        font-weight: 700;
+
+        margin-bottom: 16px;
+    }
+
+    .section-header h2 {
+        font-size: 42px;
+        line-height: 1.15;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 15px;
+    }
+
+    .section-header p {
+        color: var(--gray);
+        font-size: 15px;
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        background: rgba(255, 255, 255, 0.94);
+
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    nav {
+        height: 78px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    .logo-box {
+        width: 44px;
+        height: 44px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 13px;
+
+        background: var(--orange);
+        color: white;
+
+        font-size: 14px;
+        font-weight: 800;
+
+        box-shadow:
+            0 8px 20px rgba(255, 92, 0, 0.22);
+    }
+
+    .logo-text {
+        color: var(--black);
+
+        font-size: 21px;
+        font-weight: 800;
+
+        letter-spacing: -0.5px;
+    }
+
+    .logo-text span {
+        color: var(--orange);
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .menu a {
+        color: #444;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        transition: 0.25s ease;
+    }
+
+    .menu a:hover {
+        color: var(--orange);
+    }
+
+    .nav-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 44px;
+
+        padding: 0 19px;
+
+        background: var(--orange);
+        color: white;
+
+        border-radius: 999px;
+
+        font-size: 13px;
+        font-weight: 700;
+
+        box-shadow:
+            0 8px 22px rgba(255, 92, 0, 0.20);
+
+        transition: 0.25s ease;
+    }
+
+    .nav-button:hover {
+        background: var(--orange-dark);
+        transform: translateY(-2px);
+    }
+
+    .mobile-menu-btn {
+        display: none;
+
+        width: 44px;
+        height: 44px;
+
+        border: 1px solid var(--border);
+
+        background: white;
+
+        border-radius: 12px;
+
+        cursor: pointer;
+
+        font-size: 19px;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+        position: relative;
+
+        overflow: hidden;
+
+        padding: 100px 0 110px;
+
+        background:
+            radial-gradient(
+                circle at 80% 20%,
+                rgba(255, 92, 0, 0.12),
+                transparent 30%
+            ),
+            linear-gradient(
+                180deg,
+                #ffffff 0%,
+                #fff9f5 100%
+            );
+    }
+
+    .hero::before {
+        content: "";
+
+        position: absolute;
+
+        width: 500px;
+        height: 500px;
+
+        right: -220px;
+        top: 70px;
+
+        border-radius: 50%;
+
+        background:
+            rgba(255, 92, 0, 0.04);
+    }
+
+    .hero-grid {
+        position: relative;
+        z-index: 2;
+
+        display: grid;
+
+        grid-template-columns:
+            1.05fr
+            0.95fr;
+
+        align-items: center;
+
+        gap: 80px;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 8px 14px;
+
+        background: var(--orange-light);
+
+        color: var(--orange);
+
+        border-radius: 999px;
+
+        font-size: 12px;
+        font-weight: 700;
+
+        margin-bottom: 22px;
+    }
+
+    .hero-dot {
+        width: 8px;
+        height: 8px;
+
+        border-radius: 50%;
+
+        background: var(--orange);
+    }
+
+    .hero h1 {
+        font-size: clamp(43px, 5.5vw, 64px);
+
+        line-height: 1.04;
+
+        letter-spacing: -2.5px;
+
+        margin-bottom: 23px;
+    }
+
+    .hero h1 span {
+        color: var(--orange);
+    }
+
+    .hero-description {
+        max-width: 600px;
+
+        color: var(--gray);
+
+        font-size: 16px;
+
+        line-height: 1.85;
+
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 52px;
+
+        padding: 0 24px;
+
+        border-radius: 13px;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        transition: 0.25s ease;
+    }
+
+    .btn-primary {
+        background: var(--orange);
+        color: white;
+
+        box-shadow:
+            0 12px 30px rgba(255, 92, 0, 0.22);
+    }
+
+    .btn-primary:hover {
+        background: var(--orange-dark);
+
+        transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+        background: white;
+
+        color: var(--black);
+
+        border: 1px solid #ddd;
+    }
+
+    .btn-secondary:hover {
+        border-color: var(--orange);
+        color: var(--orange);
+    }
+
+
+    /* =========================================================
+       HERO CARD
+    ========================================================= */
+
+    .hero-card-wrapper {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-card {
+        position: relative;
+
+        width: min(100%, 420px);
+
+        padding: 38px;
+
+        background: var(--black);
+
+        color: white;
+
+        border-radius: 28px;
+
+        box-shadow: var(--shadow-lg);
+
+        overflow: hidden;
+    }
+
+    .hero-card::after {
+        content: "";
+
+        position: absolute;
+
+        width: 240px;
+        height: 240px;
+
+        right: -100px;
+        top: -100px;
+
+        border-radius: 50%;
+
+        background:
+            rgba(255, 92, 0, 0.20);
+    }
+
+    .hero-card-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-card h3 {
+        font-size: 26px;
+
+        line-height: 1.2;
+
+        margin-bottom: 12px;
+    }
+
+    .hero-card p {
+        color: #aaa;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        margin-bottom: 28px;
+    }
+
+    .hero-card-price {
+        display: flex;
+        align-items: baseline;
+
+        gap: 5px;
+
+        margin-bottom: 5px;
+    }
+
+    .hero-card-price strong {
+        font-size: 45px;
+        line-height: 1;
+    }
+
+    .hero-card-price span {
+        color: #aaa;
+        font-size: 13px;
+    }
+
+    .hero-card-note {
+        color: #999;
+        font-size: 11px;
+    }
+
+
+    /* =========================================================
+       TRUST BAR
+    ========================================================= */
+
+    .trust-bar {
+        padding: 25px 0;
+
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+
+        background: white;
+    }
+
+    .trust-inner {
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 20px;
+    }
+
+    .trust-item {
+        text-align: center;
+
+        padding: 10px;
+    }
+
+    .trust-item strong {
+        display: block;
+
+        font-size: 15px;
+
+        margin-bottom: 3px;
+    }
+
+    .trust-item span {
+        color: var(--muted);
+
+        font-size: 12px;
+    }
+
+
+    /* =========================================================
+       HOW IT WORKS
+    ========================================================= */
+
+    .steps {
+        display: grid;
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+        gap: 20px;
+    }
+
+    .step {
+        position: relative;
+
+        padding: 30px;
+
+        background: white;
+
+        border: 1px solid var(--border);
+
+        border-radius: 20px;
+
+        transition: 0.3s ease;
+    }
+
+    .step:hover {
+        transform: translateY(-5px);
+
+        box-shadow: var(--shadow-md);
+
+        border-color:
+            rgba(255, 92, 0, 0.25);
+    }
+
+    .step-number {
+        width: 48px;
+        height: 48px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--orange);
+
+        color: white;
+
+        border-radius: 14px;
+
+        font-size: 14px;
+        font-weight: 800;
+
+        margin-bottom: 20px;
+    }
+
+    .step h3 {
+        font-size: 17px;
+
+        margin-bottom: 9px;
+    }
+
+    .step p {
+        color: var(--gray);
+
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    /* =========================================================
+       BENEFITS
+    ========================================================= */
+
+    .benefits-section {
+        background: #fafafa;
+    }
+
+    .benefit-grid {
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 22px;
+    }
+
+    .benefit-card {
+        padding: 32px;
+
+        background: white;
+
+        border: 1px solid var(--border);
+
+        border-radius: 21px;
+
+        transition: 0.3s ease;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-5px);
+
+        box-shadow: var(--shadow-md);
+    }
+
+    .benefit-number {
+        color: var(--orange);
+
+        font-size: 12px;
+        font-weight: 800;
+
+        margin-bottom: 12px;
+    }
+
+    .benefit-card h3 {
+        font-size: 18px;
+
+        margin-bottom: 10px;
+    }
+
+    .benefit-card p {
+        color: var(--gray);
+
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    /* =========================================================
+       PRICING
+    ========================================================= */
+
+    .pricing-grid {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        max-width: 850px;
+
+        margin: 0 auto;
+
+        gap: 22px;
+    }
+
+    .pricing-card {
+        position: relative;
+
+        padding: 38px;
+
+        background: white;
+
+        border: 1px solid var(--border);
+
+        border-radius: 24px;
+
+        box-shadow:
+            0 8px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    .pricing-card.featured {
+        border:
+            2px solid var(--orange);
+
+        box-shadow:
+            0 18px 50px rgba(255, 92, 0, 0.12);
+    }
+
+    .popular-badge {
+        position: absolute;
+
+        top: 18px;
+        right: 18px;
+
+        padding: 6px 10px;
+
+        background: var(--orange);
+
+        color: white;
+
+        border-radius: 999px;
+
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    .pricing-card h3 {
+        font-size: 21px;
+
+        margin-bottom: 7px;
+    }
+
+    .pricing-description {
+        color: var(--gray);
+
+        font-size: 13px;
+
+        margin-bottom: 25px;
+    }
+
+    .price {
+        display: flex;
+        align-items: baseline;
+
+        gap: 5px;
+
+        margin-bottom: 24px;
+    }
+
+    .price strong {
+        font-size: 48px;
+
+        line-height: 1;
+
+        letter-spacing: -2px;
+    }
+
+    .price span {
+        color: var(--muted);
+
+        font-size: 12px;
+    }
+
+    .pricing-list {
+        list-style: none;
+
+        margin-bottom: 28px;
+    }
+
+    .pricing-list li {
+        display: flex;
+        align-items: flex-start;
+
+        gap: 10px;
+
+        padding: 9px 0;
+
+        color: #555;
+
+        font-size: 13px;
+
+        border-bottom:
+            1px solid #f1f1f1;
+    }
+
+    .pricing-list li:last-child {
+        border-bottom: none;
+    }
+
+    .check {
+        width: 20px;
+        height: 20px;
+
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--orange-light);
+
+        color: var(--orange);
+
+        border-radius: 50%;
+
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    .pricing-button {
+        width: 100%;
+
+        min-height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 12px;
+
+        background: #111;
+
+        color: white;
+
+        font-size: 13px;
+        font-weight: 700;
+
+        transition: 0.25s ease;
+    }
+
+    .pricing-card.featured .pricing-button {
+        background: var(--orange);
+    }
+
+    .pricing-button:hover {
+        transform: translateY(-2px);
+
+        background: var(--orange);
+    }
+
+
+    /* =========================================================
+       PLATFORM
+    ========================================================= */
+
+    .platform-section {
+        background: #fafafa;
+    }
+
+    .platform-grid {
+        display: grid;
+
+        grid-template-columns:
+            0.9fr
+            1.1fr;
+
+        align-items: center;
+
+        gap: 70px;
+    }
+
+    .platform-card {
+        padding: 38px;
+
+        background: var(--black);
+
+        color: white;
+
+        border-radius: 26px;
+
+        box-shadow: var(--shadow-lg);
+    }
+
+    .platform-card small {
+        display: block;
+
+        color: var(--orange);
+
+        font-size: 11px;
+        font-weight: 800;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+
+        margin-bottom: 12px;
+    }
+
+    .platform-card h3 {
+        font-size: 27px;
+
+        margin-bottom: 12px;
+    }
+
+    .platform-card p {
+        color: #aaa;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+    .platform-content h2 {
+        font-size: 39px;
+
+        line-height: 1.15;
+
+        margin-bottom: 18px;
+    }
+
+    .platform-content > p {
+        color: var(--gray);
+
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        margin-bottom: 25px;
+    }
+
+    .platform-list {
+        list-style: none;
+    }
+
+    .platform-list li {
+        display: flex;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+        padding: 12px 0;
+
+        border-bottom:
+            1px solid var(--border);
+
+        font-size: 13px;
+    }
+
+    .platform-list li:last-child {
+        border-bottom: none;
+    }
+
+
+    /* =========================================================
+       APPLICATION
+    ========================================================= */
+
+    .application-section {
+        background: white;
+    }
+
+    .application-grid {
+        display: grid;
+
+        grid-template-columns:
+            0.75fr
+            1.25fr;
+
+        gap: 30px;
+
+        align-items: start;
+    }
+
+    .application-info {
+        position: sticky;
+        top: 105px;
+
+        padding: 35px;
+
+        background: var(--black);
+
+        color: white;
+
+        border-radius: 24px;
+
+        box-shadow: var(--shadow-md);
+    }
+
+    .application-info h3 {
+        font-size: 24px;
+
+        margin-bottom: 14px;
+    }
+
+    .application-info > p {
+        color: #aaa;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        margin-bottom: 25px;
+    }
+
+    .application-note {
+        padding: 16px;
+
+        background: #202020;
+
+        border-radius: 13px;
+
+        border:
+            1px solid #2c2c2c;
+    }
+
+    .application-note strong {
+        display: block;
+
+        color: white;
+
+        font-size: 12px;
+
+        margin-bottom: 5px;
+    }
+
+    .application-note span {
+        color: #999;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+    .application-form {
+        padding: 38px;
+
+        background: white;
+
+        border: 1px solid var(--border);
+
+        border-radius: 24px;
+
+        box-shadow:
+            0 8px 35px rgba(0, 0, 0, 0.04);
+    }
+
+    .application-form h3 {
+        font-size: 25px;
+
+        margin-bottom: 8px;
+    }
+
+    .application-form > p {
+        color: var(--gray);
+
+        font-size: 13px;
+
+        margin-bottom: 28px;
+    }
+
+    .form-grid {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 16px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+    .form-group.full {
+        grid-column: 1 / -1;
+    }
+
+    .form-group label {
+        color: #333;
+
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .form-group label span {
+        color: var(--orange);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+
+        padding: 14px 15px;
+
+        border:
+            1px solid #ddd;
+
+        border-radius: 11px;
+
+        outline: none;
+
+        background: white;
+
+        color: #222;
+
+        font-size: 13px;
+
+        transition: 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: var(--orange);
+
+        box-shadow:
+            0 0 0 3px rgba(255, 92, 0, 0.08);
+    }
+
+    .form-group textarea {
+        min-height: 120px;
+
+        resize: vertical;
+    }
+
+    .form-actions {
+        margin-top: 22px;
+    }
+
+    .submit-button {
+        width: 100%;
+
+        min-height: 52px;
+
+        border: none;
+
+        border-radius: 12px;
+
+        background: var(--orange);
+
+        color: white;
+
+        font-size: 14px;
+        font-weight: 800;
+
+        cursor: pointer;
+
+        transition: 0.25s ease;
+    }
+
+    .submit-button:hover {
+        background: var(--orange-dark);
+
+        transform: translateY(-2px);
+    }
+
+    .submit-button:disabled {
+        opacity: 0.7;
+
+        cursor: not-allowed;
+
+        transform: none;
+    }
+
+    .form-disclaimer {
+        margin-top: 13px;
+
+        color: #999;
+
+        font-size: 10px;
+
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* =========================================================
+       FORM STATUS MESSAGE
+    ========================================================= */
+
+    .form-status {
+        display: none;
+
+        margin-bottom: 22px;
+
+        padding: 15px 17px;
+
+        border-radius: 12px;
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+    .form-status.success {
+        display: block;
+
+        background: #edf9f0;
+
+        color: #23733a;
+
+        border: 1px solid #ccebd3;
+    }
+
+    .form-status.error {
+        display: block;
+
+        background: #fff1f1;
+
+        color: #a52a2a;
+
+        border: 1px solid #f0cccc;
+    }
+
+
+    /* =========================================================
+       FAQ
+    ========================================================= */
+
+    .faq-section {
+        background: #fafafa;
+    }
+
+    .faq-list {
+        max-width: 850px;
+
+        margin: 0 auto;
+    }
+
+    .faq-item {
+        padding: 23px 26px;
+
+        background: white;
+
+        border:
+            1px solid var(--border);
+
+        border-radius: 15px;
+
+        margin-bottom: 12px;
+    }
+
+    .faq-item h3 {
+        font-size: 15px;
+
+        margin-bottom: 8px;
+    }
+
+    .faq-item p {
+        color: var(--gray);
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       CTA
+    ========================================================= */
+
+    .cta {
+        padding: 95px 0;
+
+        background:
+            radial-gradient(
+                circle at 15% 20%,
+                rgba(255, 255, 255, 0.15),
+                transparent 25%
+            ),
+            linear-gradient(
+                135deg,
+                #ff5c00,
+                #f36a16
+            );
+
+        color: white;
+
+        text-align: center;
+    }
+
+    .cta h2 {
+        font-size: 43px;
+
+        line-height: 1.15;
+
+        margin-bottom: 14px;
+    }
+
+    .cta p {
+        max-width: 600px;
+
+        margin: 0 auto 28px;
+
+        color:
+            rgba(255, 255, 255, 0.88);
+
+        font-size: 14px;
+    }
+
+    .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 52px;
+
+        padding: 0 28px;
+
+        background: white;
+
+        color: var(--orange);
+
+        border-radius: 999px;
+
+        font-size: 14px;
+        font-weight: 800;
+
+        transition: 0.25s ease;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+
+        box-shadow:
+            0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+        padding: 65px 0 25px;
+
+        background: #111;
+
+        color: #aaa;
+    }
+
+    .footer-grid {
+        display: grid;
+
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr
+            1fr;
+
+        gap: 40px;
+    }
+
+    .footer-brand h3 {
+        color: white;
+
+        font-size: 22px;
+
+        margin-bottom: 12px;
+    }
+
+    .footer-brand h3 span {
+        color: var(--orange);
+    }
+
+    .footer-brand p {
+        max-width: 330px;
+
+        color: #888;
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+    footer h4 {
+        color: white;
+
+        font-size: 13px;
+
+        margin-bottom: 15px;
+    }
+
+    footer a {
+        display: block;
+
+        color: #999;
+
+        font-size: 12px;
+
+        margin-bottom: 9px;
+
+        transition: 0.2s ease;
+    }
+
+    footer a:hover {
+        color: var(--orange);
+    }
+
+    .footer-bottom {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+        margin-top: 45px;
+
+        padding-top: 20px;
+
+        border-top:
+            1px solid #292929;
+    }
+
+    .copyright,
+    .tagline {
+        color: #666;
+
+        font-size: 11px;
+    }
+
+
+    /* =========================================================
+       REVEAL
+    ========================================================= */
+
+    .reveal {
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+
+        transition:
+            opacity 0.7s ease,
+            transform 0.7s ease;
+    }
+
+    .reveal.visible {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 950px) {
+
+        .menu {
+            display: none;
+        }
+
+        .mobile-menu-btn {
+            display: block;
+        }
+
+        .hero-grid,
+        .platform-grid {
+            grid-template-columns: 1fr;
+
+            gap: 50px;
+        }
+
+        .hero-content {
+            text-align: center;
+
+            margin: 0 auto;
+        }
+
+        .hero-description {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            justify-content: center;
+        }
+
+        .steps {
+            grid-template-columns:
+                repeat(2, 1fr);
+        }
+
+        .application-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .application-info {
+            position: static;
+        }
+
+        .footer-grid {
+            grid-template-columns:
+                repeat(2, 1fr);
+        }
+
+    }
+
+
+    @media (max-width: 650px) {
+
+        .container {
+            width:
+                min(100% - 28px, var(--max-width));
+        }
+
+        .section {
+            padding: 75px 0;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+        }
+
+        nav {
+            height: 70px;
+        }
+
+        .logo-box {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-text {
+            font-size: 19px;
+        }
+
+        .hero {
+            padding: 65px 0 75px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+
+            letter-spacing: -1.7px;
+        }
+
+        .hero-description {
+            font-size: 14px;
+        }
+
+        .hero-card {
+            padding: 30px;
+        }
+
+        .trust-inner {
+            grid-template-columns: 1fr;
+
+            gap: 5px;
+        }
+
+        .steps,
+        .benefit-grid,
+        .pricing-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .platform-content h2 {
+            font-size: 32px;
+        }
+
+        .application-form {
+            padding: 25px;
+        }
+
+        .form-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .form-group.full {
+            grid-column: auto;
+        }
+
+        .cta {
+            padding: 75px 0;
+        }
+
+        .cta h2 {
+            font-size: 34px;
+        }
+
+        .footer-grid {
+            grid-template-columns: 1fr;
+
+            gap: 30px;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+
+            align-items: flex-start;
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header>
+
+```
+<div class="container">
+
+    <nav>
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <div class="logo-box">
+                KE
+            </div>
+
+            <div class="logo-text">
+                Kazi<span>Eats</span>
+            </div>
+
+        </a>
+
+
+        <div class="menu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="#how">
+                How It Works
+            </a>
+
+            <a href="#pricing">
+                Packages
+            </a>
+
+            <a href="#application">
+                Apply
+            </a>
+
+            <a href="driver.html">
+                Become a Driver
+            </a>
+
+        </div>
+
+
+        <a
+            href="#application"
+            class="nav-button"
+        >
+            Join KaziEats
+        </a>
+
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuButton"
+            aria-label="Open menu"
+            type="button"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+</div>
+```
+
+</header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+```
+<div class="container">
+
+    <div class="hero-grid">
+
+
+        <div class="hero-content reveal">
+
+            <div class="hero-badge">
+
+                <span class="hero-dot"></span>
+
+                Restaurant Partner Programme
+
+            </div>
+
+
+            <h1>
+
+                Grow Your Restaurant
+                <span>With KaziEats.</span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Put your restaurant in front of local customers,
+                connect with our delivery network and get access
+                to the KaziEats restaurant platform built to help
+                local businesses grow.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#pricing"
+                    class="btn btn-primary"
+                >
+                    View Packages
+                </a>
+
+                <a
+                    href="#application"
+                    class="btn btn-secondary"
+                >
+                    Apply Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card-wrapper reveal">
+
+            <div class="hero-card">
+
+                <div class="hero-card-content">
+
+                    <h3>
+                        Start From
+                    </h3>
+
+                    <p>
+                        Join the KaziEats restaurant network
+                        and start reaching customers through
+                        our platform.
+                    </p>
+
+
+                    <div class="hero-card-price">
+
+                        <strong>
+                            R80
+                        </strong>
+
+                        <span>
+                            / month
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-card-note">
+                        Basic restaurant package
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     TRUST BAR
+========================================================= -->
+
+<section class="trust-bar">
+
+```
+<div class="container">
+
+    <div class="trust-inner">
+
+        <div class="trust-item">
+
+            <strong>
+                Local Customers
+            </strong>
+
+            <span>
+                Reach customers around your community
+            </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <strong>
+                Delivery Network
+            </strong>
+
+            <span>
+                Connect orders with KaziEats drivers
+            </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <strong>
+                Restaurant App
+            </strong>
+
+            <span>
+                Manage your KaziEats restaurant presence
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section
+    class="section"
+    id="how"
+>
+
+```
+<div class="container">
+
+
+    <div class="section-header reveal">
+
+        <div class="section-label">
+            How It Works
+        </div>
+
+        <h2>
+            From Application To Going Live
+        </h2>
+
+        <p>
+            We keep the onboarding process simple so you can
+            focus on running your restaurant.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+
+        <div class="step reveal">
+
+            <div class="step-number">
+                01
+            </div>
+
+            <h3>
+                Apply Online
+            </h3>
+
+            <p>
+                Submit your restaurant details through
+                the application form below.
+            </p>
+
+        </div>
+
+
+        <div class="step reveal">
+
+            <div class="step-number">
+                02
+            </div>
+
+            <h3>
+                We Review
+            </h3>
+
+            <p>
+                Our team reviews your restaurant information
+                and contacts you about the next steps.
+            </p>
+
+        </div>
+
+
+        <div class="step reveal">
+
+            <div class="step-number">
+                03
+            </div>
+
+            <h3>
+                Get Your App
+            </h3>
+
+            <p>
+                Once approved, we provide access to the
+                separate KaziEats restaurant app.
+            </p>
+
+        </div>
+
+
+        <div class="step reveal">
+
+            <div class="step-number">
+                04
+            </div>
+
+            <h3>
+                Go Live
+            </h3>
+
+            <p>
+                Choose your package, complete activation
+                and start receiving customers through KaziEats.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     BENEFITS
+========================================================= -->
+
+<section
+    class="section benefits-section"
+>
+
+```
+<div class="container">
+
+
+    <div class="section-header reveal">
+
+        <div class="section-label">
+            Why Join KaziEats?
+        </div>
+
+        <h2>
+            More Than Just Delivery
+        </h2>
+
+        <p>
+            KaziEats gives local restaurants a digital platform
+            to reach customers and grow their presence.
+        </p>
+
+    </div>
+
+
+    <div class="benefit-grid">
+
+
+        <div class="benefit-card reveal">
+
+            <div class="benefit-number">
+                01
+            </div>
+
+            <h3>
+                More Visibility
+            </h3>
+
+            <p>
+                Your restaurant can be discovered by customers
+                looking for food in the areas we serve.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card reveal">
+
+            <div class="benefit-number">
+                02
+            </div>
+
+            <h3>
+                Delivery Support
+            </h3>
+
+            <p>
+                Orders can be connected to the KaziEats
+                delivery network so your team can focus
+                on preparing food.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card reveal">
+
+            <div class="benefit-number">
+                03
+            </div>
+
+            <h3>
+                Digital Restaurant Presence
+            </h3>
+
+            <p>
+                Manage your restaurant information, menu
+                and availability through your dedicated
+                restaurant platform.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card reveal">
+
+            <div class="benefit-number">
+                04
+            </div>
+
+            <h3>
+                Local Marketing
+            </h3>
+
+            <p>
+                Premium partners can receive additional
+                marketing and promotional exposure through
+                KaziEats.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card reveal">
+
+            <div class="benefit-number">
+                05
+            </div>
+
+            <h3>
+                Featured Exposure
+            </h3>
+
+            <p>
+                Premium partners can receive increased
+                visibility and featured placement where
+                available.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card reveal">
+
+            <div class="benefit-number">
+                06
+            </div>
+
+            <h3>
+                Built For Local Business
+            </h3>
+
+            <p>
+                KaziEats is designed around local communities,
+                restaurants and customers.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     PACKAGES
+========================================================= -->
+
+<section
+    class="section"
+    id="pricing"
+>
+
+```
+<div class="container">
+
+
+    <div class="section-header reveal">
+
+        <div class="section-label">
+            Restaurant Packages
+        </div>
+
+        <h2>
+            Choose Your Package
+        </h2>
+
+        <p>
+            Select the package that fits your restaurant.
+            You can upgrade as your business grows.
+        </p>
+
+    </div>
+
+
+    <div class="pricing-grid">
+
+
+        <!-- BASIC -->
+
+        <div class="pricing-card reveal">
+
+            <h3>
+                Basic
+            </h3>
+
+            <p class="pricing-description">
+                A simple way to get your restaurant onto
+                the KaziEats platform.
+            </p>
+
+
+            <div class="price">
+
+                <strong>
+                    R80
+                </strong>
+
+                <span>
+                    / month
+                </span>
+
+            </div>
+
+
+            <ul class="pricing-list">
+
+                <li>
+                    <span class="check">✓</span>
+                    Restaurant listed on KaziEats
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Access to the restaurant platform
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Manage your restaurant information
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Manage your menu and availability
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Access to KaziEats delivery network
+                </li>
+
+            </ul>
+
+
+            <a
+                href="#application"
+                class="pricing-button"
+                data-package="Basic - R80/month"
+            >
+                Apply For Basic
+            </a>
+
+        </div>
+
+
+        <!-- PREMIUM -->
+
+        <div
+            class="pricing-card featured reveal"
+        >
+
+            <div class="popular-badge">
+                RECOMMENDED
+            </div>
+
+
+            <h3>
+                Premium
+            </h3>
+
+            <p class="pricing-description">
+                More visibility and additional exposure
+                for restaurants looking to grow faster.
+            </p>
+
+
+            <div class="price">
+
+                <strong>
+                    R150
+                </strong>
+
+                <span>
+                    / month
+                </span>
+
+            </div>
+
+
+            <ul class="pricing-list">
+
+                <li>
+                    <span class="check">✓</span>
+                    Everything in Basic
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Additional KaziEats marketing support
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Increased visibility on the platform
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Featured restaurant opportunities
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Promotional exposure where available
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Additional platform services
+                </li>
+
+            </ul>
+
+
+            <a
+                href="#application"
+                class="pricing-button"
+                data-package="Premium - R150/month"
+            >
+                Apply For Premium
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     PLATFORM
+========================================================= -->
+
+<section
+    class="section platform-section"
+>
+
+```
+<div class="container">
+
+    <div class="platform-grid">
+
+
+        <div class="platform-card reveal">
+
+            <small>
+                Separate Restaurant App
+            </small>
+
+            <h3>
+                Your Restaurant.
+                Your Dashboard.
+            </h3>
+
+            <p>
+                Approved restaurant partners receive
+                access to a separate KaziEats restaurant
+                application designed specifically for
+                managing their business on the platform.
+            </p>
+
+        </div>
+
+
+        <div class="platform-content reveal">
+
+            <div class="section-label">
+                Restaurant Platform
+            </div>
+
+            <h2>
+                We Give Your Restaurant
+                Its Own Digital Workspace.
+            </h2>
+
+            <p>
+                After your application has been reviewed
+                and approved, KaziEats provides your restaurant
+                with access to the restaurant platform.
+            </p>
+
+
+            <ul class="platform-list">
+
+                <li>
+                    <span class="check">✓</span>
+                    Receive and manage KaziEats orders.
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Update your menu and restaurant information.
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Manage availability and order preparation.
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Connect orders with KaziEats drivers.
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Build your restaurant presence on the platform.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     APPLICATION
+========================================================= -->
+
+<section
+    class="section application-section"
+    id="application"
+>
+
+```
+<div class="container">
+
+
+    <div class="section-header reveal">
+
+        <div class="section-label">
+            Restaurant Application
+        </div>
+
+        <h2>
+            Let's Get Your Restaurant Started
+        </h2>
+
+        <p>
+            Submit your details and our team will contact
+            you regarding approval, package activation
+            and access to the restaurant app.
+        </p>
+
+    </div>
+
+
+    <div class="application-grid">
+
+
+        <div class="application-info reveal">
+
+            <h3>
+                Before You Apply
+            </h3>
+
+            <p>
+                Please make sure the information you provide
+                is accurate. We use your contact details to
+                communicate with you about your KaziEats
+                restaurant application.
+            </p>
+
+
+            <div class="application-note">
+
+                <strong>
+                    What happens next?
+                </strong>
+
+                <span>
+                    We review your application, contact you
+                    for any additional information and,
+                    once approved, provide instructions for
+                    accessing the separate restaurant app.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             RESTAURANT APPLICATION FORM
+        ================================================= -->
+
+        <form
+            class="application-form reveal"
+            id="restaurantApplicationForm"
+        >
+
+            <h3>
+                Restaurant Details
+            </h3>
+
+            <p>
+                Complete the form below to apply.
+            </p>
+
+
+            <!-- STATUS MESSAGE -->
+
+            <div
+                id="formStatus"
+                class="form-status"
+                role="alert"
+                aria-live="polite"
+            ></div>
+
+
+            <div class="form-grid">
+
+
+                <!-- OWNER NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Owner / Contact Name
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        name="ownerName"
+                        placeholder="e.g. John Mokoena"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- RESTAURANT NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Restaurant Name
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        name="restaurantName"
+                        placeholder="e.g. Mokoena's Kitchen"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label>
+                        Email Address
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="restaurant@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="+27 61 237 0716"
+                        autocomplete="tel"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- RESTAURANT TYPE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Restaurant Type
+                        <span>*</span>
+                    </label>
+
+                    <select
+                        name="restaurantType"
+                        required
+                    >
+
+                        <option value="">
+                            Select restaurant type
+                        </option>
+
+                        <option value="Restaurant">
+                            Restaurant
+                        </option>
+
+                        <option value="Fast Food">
+                            Fast Food
+                        </option>
+
+                        <option value="Takeaway">
+                            Takeaway
+                        </option>
+
+                        <option value="Cafe">
+                            Café
+                        </option>
+
+                        <option value="Bakery">
+                            Bakery
+                        </option>
+
+                        <option value="Food Stall">
+                            Food Stall
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PACKAGE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Preferred Package
+                        <span>*</span>
+                    </label>
+
+                    <select
+                        name="package"
+                        id="packageSelect"
+                        required
+                    >
+
+                        <option value="">
+                            Select package
+                        </option>
+
+                        <option value="Basic - R80/month">
+                            Basic — R80/month
+                        </option>
+
+                        <option value="Premium - R150/month">
+                            Premium — R150/month
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ADDRESS -->
+
+                <div class="form-group full">
+
+                    <label>
+                        Restaurant Address
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        name="address"
+                        placeholder="Restaurant address / area"
+                        autocomplete="street-address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group full">
+
+                    <label>
+                        Tell Us About Your Restaurant
+                    </label>
+
+                    <textarea
+                        name="additionalInformation"
+                        placeholder="Tell us what you sell, your operating hours, social media page or anything else you'd like us to know."
+                    ></textarea>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                    id="submitRestaurantApplication"
+                >
+                    Send Application On WhatsApp
+                </button>
+
+
+                <p class="form-disclaimer">
+                    By submitting this application, you agree
+                    that KaziEats may contact you regarding your
+                    restaurant partnership application.
+                </p>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section
+    class="section faq-section"
+>
+
+```
+<div class="container">
+
+
+    <div class="section-header reveal">
+
+        <div class="section-label">
+            Restaurant FAQ
+        </div>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+    </div>
+
+
+    <div class="faq-list">
+
+
+        <div class="faq-item reveal">
+
+            <h3>
+                How much does it cost to join KaziEats?
+            </h3>
+
+            <p>
+                Our current restaurant packages start at
+                R80 per month for Basic and R150 per month
+                for Premium.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+            <h3>
+                What is the difference between Basic and Premium?
+            </h3>
+
+            <p>
+                Basic provides access to the KaziEats
+                restaurant platform and core restaurant
+                services. Premium includes additional
+                marketing, visibility, featured opportunities
+                and promotional exposure.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+            <h3>
+                Do I get a separate restaurant app?
+            </h3>
+
+            <p>
+                Yes. Once your restaurant application is
+                approved, KaziEats provides access to a
+                separate restaurant application.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+            <h3>
+                What happens after I submit my application?
+            </h3>
+
+            <p>
+                Our team reviews the information you provide
+                and contacts you regarding approval, package
+                activation and the next steps.
+            </p>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+            <h3>
+                Can I upgrade from Basic to Premium?
+            </h3>
+
+            <p>
+                Yes. You can contact the KaziEats team if
+                you would like to discuss upgrading your
+                restaurant package.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+```
+<div class="container reveal">
+
+    <h2>
+        Ready To Grow With KaziEats?
+    </h2>
+
+    <p>
+        Join a growing local delivery platform and put
+        your restaurant in front of more customers.
+    </p>
+
+    <a
+        href="#application"
+        class="cta-button"
+    >
+        Apply To Become A Partner
+    </a>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+```
+<div class="container">
+
+
+    <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+            <h3>
+                Kazi<span>Eats</span>
+            </h3>
+
+            <p>
+                South Africa's local food delivery platform
+                connecting customers, restaurants and
+                independent delivery drivers.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#about">
+                About Us
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+            <a href="restaurant.html">
+                Become a Restaurant
+            </a>
+
+            <a href="driver.html">
+                Become a Driver
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Legal
+            </h4>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="terms.html">
+                Terms & Conditions
+            </a>
+
+            <a href="refund.html">
+                Refund Policy
+            </a>
+
+            <a href="delivery-policy.html">
+                Delivery Policy
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <a href="mailto:Kazieats012@gmail.com">
+                Kazieats012@gmail.com
+            </a>
+
+            <a href="tel:+27612370716">
+                +27 61 237 0716
+            </a>
+
+            <a href="tel:+27683687197">
+                +27 68 368 7197
+            </a>
+
+            <a href="tel:+27816335609">
+                +27 81 633 5609
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="copyright">
+
+            © <span id="year"></span>
+            KaziEats. All Rights Reserved.
+
+        </div>
+
+
+        <div class="tagline">
+
+            Local Flavor. Delivered Fast.
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+    /* =========================================================
+       KAZIEATS WHATSAPP NUMBER
+       
+       IMPORTANT:
+       WhatsApp numbers must be entered WITHOUT:
+       +
+       spaces
+       brackets
+       dashes
+
+       South Africa:
+       +27 61 237 0716
+
+       becomes:
+       27612370716
+    ========================================================= */
+
+    const KAZIEATS_WHATSAPP_NUMBER =
+        "27612370716";
+
+
+    /* =========================================================
+       CURRENT YEAR
+    ========================================================= */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* =========================================================
+       SCROLL REVEAL
+    ========================================================= */
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+    const revealObserver =
+        new IntersectionObserver(
+            (entries, observer) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("visible");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(element => {
+
+        revealObserver.observe(element);
+
+    });
+
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    const mobileButton =
+        document.getElementById("mobileMenuButton");
+
+    const menu =
+        document.querySelector(".menu");
+
+
+    mobileButton.addEventListener("click", () => {
+
+        const isOpen =
+            menu.style.display === "flex";
+
+
+        if (isOpen) {
+
+            menu.style.display = "none";
+
+            return;
+
+        }
+
+
+        menu.style.display = "flex";
+
+        menu.style.position = "absolute";
+
+        menu.style.top = "70px";
+
+        menu.style.left = "14px";
+
+        menu.style.right = "14px";
+
+        menu.style.padding = "20px";
+
+        menu.style.flexDirection = "column";
+
+        menu.style.gap = "17px";
+
+        menu.style.background = "white";
+
+        menu.style.border =
+            "1px solid #eeeeee";
+
+        menu.style.borderRadius =
+            "18px";
+
+        menu.style.boxShadow =
+            "0 20px 50px rgba(0,0,0,.10)";
+
+    });
+
+
+    /* =========================================================
+       CLOSE MOBILE MENU
+    ========================================================= */
+
+    document.querySelectorAll(".menu a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            if (window.innerWidth <= 950) {
+
+                menu.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+
+    /* =========================================================
+       PACKAGE BUTTONS
+    ========================================================= */
+
+    const packageButtons =
+        document.querySelectorAll(
+            "[data-package]"
+        );
+
+
+    const packageSelect =
+        document.getElementById(
+            "packageSelect"
+        );
+
+
+    packageButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const selectedPackage =
+                button.getAttribute(
+                    "data-package"
+                );
+
+
+            if (packageSelect) {
+
+                packageSelect.value =
+                    selectedPackage;
+
+            }
+
+        });
+
+    });
+
+
+    /* =========================================================
+       RESTAURANT APPLICATION
+       
+       SUBMISSION METHOD:
+       WHATSAPP
+
+       FLOW:
+
+       1. Customer fills in form
+       2. Customer clicks submit
+       3. JavaScript collects the information
+       4. A WhatsApp message is created
+       5. WhatsApp opens
+       6. Message is already pre-filled
+       7. Customer presses SEND
+    ========================================================= */
+
+    const applicationForm =
+        document.getElementById(
+            "restaurantApplicationForm"
+        );
+
+
+    const submitButton =
+        document.getElementById(
+            "submitRestaurantApplication"
+        );
+
+
+    const formStatus =
+        document.getElementById(
+            "formStatus"
+        );
+
+
+    applicationForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            /* ---------------------------------------------
+               VALIDATE FORM
+            --------------------------------------------- */
+
+            if (!applicationForm.checkValidity()) {
+
+                applicationForm.reportValidity();
+
+                return;
+
+            }
+
+
+            /* ---------------------------------------------
+               GET FORM VALUES
+            --------------------------------------------- */
+
+            const ownerName =
+                applicationForm.elements.ownerName.value.trim();
+
+
+            const restaurantName =
+                applicationForm.elements.restaurantName.value.trim();
+
+
+            const email =
+                applicationForm.elements.email.value.trim();
+
+
+            const phone =
+                applicationForm.elements.phone.value.trim();
+
+
+            const restaurantType =
+                applicationForm.elements.restaurantType.value;
+
+
+            const selectedPackage =
+                applicationForm.elements.package.value;
+
+
+            const address =
+                applicationForm.elements.address.value.trim();
+
+
+            const additionalInformation =
+                applicationForm.elements.additionalInformation.value.trim();
+
+
+            /* ---------------------------------------------
+               CREATE WHATSAPP MESSAGE
+            --------------------------------------------- */
+
+            let whatsappMessage =
+
+`*NEW KAZIEATS RESTAURANT APPLICATION*
+
+Hello KaziEats,
+
+I would like to apply to become a KaziEats restaurant partner.
+
+*RESTAURANT DETAILS*
+
+Owner / Contact Name:
+${ownerName}
+
+Restaurant Name:
+${restaurantName}
+
+Email Address:
+${email}
+
+Phone Number:
+${phone}
+
+Restaurant Type:
+${restaurantType}
+
+Preferred Package:
+${selectedPackage}
+
+Restaurant Address:
+${address}`;
+
+
+            /* ---------------------------------------------
+               ADDITIONAL INFORMATION
+            --------------------------------------------- */
+
+            if (additionalInformation) {
+
+                whatsappMessage += `
+
+Additional Information:
+${additionalInformation}`;
+
+            }
+
+
+            /* ---------------------------------------------
+               MESSAGE FOOTER
+            --------------------------------------------- */
+
+            whatsappMessage += `
+
+Please let me know the next steps for my restaurant application.
+
+Thank you,
+${ownerName}`;
+
+
+            /* ---------------------------------------------
+               ENCODE MESSAGE
+            --------------------------------------------- */
+
+            const encodedMessage =
+                encodeURIComponent(
+                    whatsappMessage
+                );
+
+
+            /* ---------------------------------------------
+               CREATE WHATSAPP URL
+            --------------------------------------------- */
+
+            const whatsappURL =
+                `https://wa.me/${KAZIEATS_WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+
+            /* ---------------------------------------------
+               SHOW SUCCESS MESSAGE
+            --------------------------------------------- */
+
+            formStatus.className =
+                "form-status success";
+
+
+            formStatus.innerHTML = `
+                <strong>Application ready.</strong><br>
+                WhatsApp is opening with your application already filled in.
+                Please review the message and press Send.
+            `;
+
+
+            /* ---------------------------------------------
+               CHANGE BUTTON
+            --------------------------------------------- */
+
+            submitButton.disabled = true;
+
+            submitButton.textContent =
+                "Opening WhatsApp...";
+
+
+            /* ---------------------------------------------
+               OPEN WHATSAPP
+            --------------------------------------------- */
+
+            window.location.href =
+                whatsappURL;
+
+
+            /* ---------------------------------------------
+               RESTORE BUTTON
+               In case WhatsApp doesn't open.
+            --------------------------------------------- */
+
+            setTimeout(() => {
+
+                submitButton.disabled = false;
+
+                submitButton.textContent =
+                    "Send Application On WhatsApp";
+
+            }, 3000);
+
+        }
+    );
+
+
+</script>
+
+</body>
+
+</html>

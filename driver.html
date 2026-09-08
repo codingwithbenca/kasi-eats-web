@@ -1,0 +1,3200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Become a KaziEats Driver</title>
+
+    <meta
+        name="description"
+        content="Apply to become a KaziEats delivery driver and earn by delivering food to customers in your local community."
+    >
+
+    <meta
+        name="theme-color"
+        content="#ff5c00"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #ffffff;
+            color: #171717;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+        }
+
+
+        /* =========================================================
+           VARIABLES
+        ========================================================= */
+
+        :root {
+
+            --orange: #ff5c00;
+            --orange-dark: #e64f00;
+            --orange-light: #fff3eb;
+
+            --black: #111111;
+            --dark: #181818;
+
+            --text: #222222;
+            --gray: #666666;
+            --muted: #888888;
+
+            --light: #fafafa;
+            --border: #eeeeee;
+
+            --white: #ffffff;
+
+            --max-width: 1180px;
+
+            --shadow-sm:
+                0 8px 25px rgba(0, 0, 0, 0.05);
+
+            --shadow-md:
+                0 15px 45px rgba(0, 0, 0, 0.08);
+
+            --shadow-lg:
+                0 25px 70px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* =========================================================
+           GLOBAL
+        ========================================================= */
+
+        .container {
+            width: min(100% - 40px, var(--max-width));
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            max-width: 700px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 8px 15px;
+
+            border-radius: 999px;
+
+            background: var(--orange-light);
+            color: var(--orange);
+
+            font-size: 12px;
+            font-weight: 700;
+
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 42px;
+            line-height: 1.15;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--gray);
+            font-size: 15px;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.94);
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        nav {
+            height: 78px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+
+        .logo-box {
+            width: 44px;
+            height: 44px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 13px;
+
+            background: var(--orange);
+            color: white;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            box-shadow:
+                0 8px 20px rgba(255, 92, 0, 0.22);
+        }
+
+        .logo-text {
+            color: var(--black);
+
+            font-size: 21px;
+            font-weight: 800;
+
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: var(--orange);
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .menu a {
+            color: #444;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.25s ease;
+        }
+
+        .menu a:hover {
+            color: var(--orange);
+        }
+
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 44px;
+
+            padding: 0 19px;
+
+            background: var(--orange);
+            color: white;
+
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            box-shadow:
+                0 8px 22px rgba(255, 92, 0, 0.20);
+
+            transition: 0.25s ease;
+        }
+
+        .nav-button:hover {
+            background: var(--orange-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+
+            width: 44px;
+            height: 44px;
+
+            border: 1px solid var(--border);
+
+            background: white;
+
+            border-radius: 12px;
+
+            cursor: pointer;
+
+            font-size: 19px;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 100px 0 110px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(255, 92, 0, 0.12),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    180deg,
+                    #ffffff 0%,
+                    #fff9f5 100%
+                );
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            right: -220px;
+            top: 70px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 92, 0, 0.04);
+        }
+
+        .hero-grid {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                1.05fr
+                0.95fr;
+
+            align-items: center;
+
+            gap: 80px;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 8px 14px;
+
+            background: var(--orange-light);
+
+            color: var(--orange);
+
+            border-radius: 999px;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            margin-bottom: 22px;
+        }
+
+        .hero-dot {
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: var(--orange);
+        }
+
+        .hero h1 {
+            font-size: clamp(43px, 5.5vw, 64px);
+
+            line-height: 1.04;
+
+            letter-spacing: -2.5px;
+
+            margin-bottom: 23px;
+        }
+
+        .hero h1 span {
+            color: var(--orange);
+        }
+
+        .hero-description {
+            max-width: 600px;
+
+            color: var(--gray);
+
+            font-size: 16px;
+
+            line-height: 1.85;
+
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 52px;
+
+            padding: 0 24px;
+
+            border-radius: 13px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: 0.25s ease;
+        }
+
+        .btn-primary {
+            background: var(--orange);
+            color: white;
+
+            box-shadow:
+                0 12px 30px rgba(255, 92, 0, 0.22);
+        }
+
+        .btn-primary:hover {
+            background: var(--orange-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: white;
+
+            color: var(--black);
+
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--orange);
+            color: var(--orange);
+        }
+
+
+        /* =========================================================
+           HERO CARD
+        ========================================================= */
+
+        .hero-card-wrapper {
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-card {
+            position: relative;
+
+            width: min(100%, 420px);
+
+            padding: 38px;
+
+            background: var(--black);
+
+            color: white;
+
+            border-radius: 28px;
+
+            box-shadow: var(--shadow-lg);
+
+            overflow: hidden;
+        }
+
+        .hero-card::after {
+            content: "";
+
+            position: absolute;
+
+            width: 240px;
+            height: 240px;
+
+            right: -100px;
+            top: -100px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 92, 0, 0.20);
+        }
+
+        .hero-card-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-card h3 {
+            font-size: 26px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .hero-card p {
+            color: #aaa;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 28px;
+        }
+
+        .earnings {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 12px;
+        }
+
+        .earning-box {
+            padding: 17px;
+
+            background: #202020;
+
+            border:
+                1px solid #2b2b2b;
+
+            border-radius: 14px;
+        }
+
+        .earning-box strong {
+            display: block;
+
+            color: white;
+
+            font-size: 20px;
+
+            margin-bottom: 3px;
+        }
+
+        .earning-box span {
+            color: #999;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================================================
+           TRUST BAR
+        ========================================================= */
+
+        .trust-bar {
+            padding: 25px 0;
+
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+
+            background: white;
+        }
+
+        .trust-inner {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .trust-item {
+            text-align: center;
+
+            padding: 10px;
+        }
+
+        .trust-item strong {
+            display: block;
+
+            font-size: 15px;
+
+            margin-bottom: 3px;
+        }
+
+        .trust-item span {
+            color: var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+           HOW IT WORKS
+        ========================================================= */
+
+        .steps {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .step {
+            padding: 30px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 20px;
+
+            transition: 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+
+            box-shadow: var(--shadow-md);
+
+            border-color:
+                rgba(255, 92, 0, 0.25);
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--orange);
+
+            color: white;
+
+            border-radius: 14px;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            margin-bottom: 20px;
+        }
+
+        .step h3 {
+            font-size: 17px;
+
+            margin-bottom: 9px;
+        }
+
+        .step p {
+            color: var(--gray);
+
+            font-size: 13px;
+
+            line-height: 1.75;
+        }
+
+
+        /* =========================================================
+           BENEFITS
+        ========================================================= */
+
+        .benefits-section {
+            background: #fafafa;
+        }
+
+        .benefit-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .benefit-card {
+            padding: 32px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 21px;
+
+            transition: 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: var(--shadow-md);
+        }
+
+        .benefit-number {
+            color: var(--orange);
+
+            font-size: 12px;
+            font-weight: 800;
+
+            margin-bottom: 12px;
+        }
+
+        .benefit-card h3 {
+            font-size: 18px;
+
+            margin-bottom: 10px;
+        }
+
+        .benefit-card p {
+            color: var(--gray);
+
+            font-size: 13px;
+
+            line-height: 1.75;
+        }
+
+
+        /* =========================================================
+           REQUIREMENTS
+        ========================================================= */
+
+        .requirements-section {
+            background: white;
+        }
+
+        .requirements-grid {
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+        .requirement {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 14px;
+
+            padding: 22px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 17px;
+
+            background: #fff;
+        }
+
+        .requirement-icon {
+            width: 38px;
+            height: 38px;
+
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--orange-light);
+
+            color: var(--orange);
+
+            border-radius: 11px;
+
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .requirement h3 {
+            font-size: 14px;
+
+            margin-bottom: 4px;
+        }
+
+        .requirement p {
+            color: var(--gray);
+
+            font-size: 12px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+           APPLICATION
+        ========================================================= */
+
+        .application-section {
+            background: #fafafa;
+        }
+
+        .application-grid {
+            display: grid;
+
+            grid-template-columns:
+                0.75fr
+                1.25fr;
+
+            gap: 30px;
+
+            align-items: start;
+        }
+
+        .application-info {
+            position: sticky;
+
+            top: 105px;
+
+            padding: 35px;
+
+            background: var(--black);
+
+            color: white;
+
+            border-radius: 24px;
+
+            box-shadow: var(--shadow-md);
+        }
+
+        .application-info h3 {
+            font-size: 24px;
+
+            margin-bottom: 14px;
+        }
+
+        .application-info > p {
+            color: #aaa;
+
+            font-size: 13px;
+
+            line-height: 1.8;
+
+            margin-bottom: 25px;
+        }
+
+        .application-note {
+            padding: 16px;
+
+            background: #202020;
+
+            border:
+                1px solid #2c2c2c;
+
+            border-radius: 13px;
+
+            margin-bottom: 12px;
+        }
+
+        .application-note strong {
+            display: block;
+
+            color: white;
+
+            font-size: 12px;
+
+            margin-bottom: 5px;
+        }
+
+        .application-note span {
+            color: #999;
+
+            font-size: 11px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           FORM
+        ========================================================= */
+
+        .application-form {
+            padding: 38px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 24px;
+
+            box-shadow:
+                0 8px 35px rgba(0, 0, 0, 0.04);
+        }
+
+        .application-form h3 {
+            font-size: 25px;
+
+            margin-bottom: 8px;
+        }
+
+        .application-form > p {
+            color: var(--gray);
+
+            font-size: 13px;
+
+            margin-bottom: 28px;
+        }
+
+        .form-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 7px;
+        }
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            color: #333;
+
+            font-size: 12px;
+
+            font-weight: 700;
+        }
+
+        .form-group label span {
+            color: var(--orange);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+
+            padding: 14px 15px;
+
+            border:
+                1px solid #ddd;
+
+            border-radius: 11px;
+
+            outline: none;
+
+            background: white;
+
+            color: #222;
+
+            font-size: 13px;
+
+            transition: 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--orange);
+
+            box-shadow:
+                0 0 0 3px rgba(255, 92, 0, 0.08);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+
+            resize: vertical;
+        }
+
+        .form-actions {
+            margin-top: 22px;
+        }
+
+        .submit-button {
+            width: 100%;
+
+            min-height: 52px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            background: var(--orange);
+
+            color: white;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            cursor: pointer;
+
+            transition: 0.25s ease;
+        }
+
+        .submit-button:hover {
+            background: var(--orange-dark);
+
+            transform: translateY(-2px);
+        }
+
+        .form-disclaimer {
+            margin-top: 13px;
+
+            color: #999;
+
+            font-size: 10px;
+
+            line-height: 1.6;
+
+            text-align: center;
+        }
+
+
+        /* =========================================================
+           WHATSAPP STATUS
+        ========================================================= */
+
+        .form-status {
+            display: none;
+
+            margin-bottom: 22px;
+
+            padding: 15px 17px;
+
+            border-radius: 12px;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+        .form-status.success {
+            display: block;
+
+            background: #edf9f0;
+
+            color: #23733a;
+
+            border:
+                1px solid #ccebd3;
+        }
+
+        .form-status.error {
+            display: block;
+
+            background: #fff1f1;
+
+            color: #a52a2a;
+
+            border:
+                1px solid #f0cccc;
+        }
+
+
+        /* =========================================================
+           FAQ
+        ========================================================= */
+
+        .faq-section {
+            background: white;
+        }
+
+        .faq-list {
+            max-width: 850px;
+
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            padding: 23px 26px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 15px;
+
+            margin-bottom: 12px;
+        }
+
+        .faq-item h3 {
+            font-size: 15px;
+
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            color: var(--gray);
+
+            font-size: 13px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================================================
+           CTA
+        ========================================================= */
+
+        .cta {
+            padding: 95px 0;
+
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(255, 255, 255, 0.15),
+                    transparent 25%
+                ),
+                linear-gradient(
+                    135deg,
+                    #ff5c00,
+                    #f36a16
+                );
+
+            color: white;
+
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 43px;
+
+            line-height: 1.15;
+
+            margin-bottom: 14px;
+        }
+
+        .cta p {
+            max-width: 600px;
+
+            margin: 0 auto 28px;
+
+            color:
+                rgba(255, 255, 255, 0.88);
+
+            font-size: 14px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 52px;
+
+            padding: 0 28px;
+
+            background: white;
+
+            color: var(--orange);
+
+            border-radius: 999px;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            transition: 0.25s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            padding: 65px 0 25px;
+
+            background: #111;
+
+            color: #aaa;
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.5fr
+                1fr
+                1fr
+                1fr;
+
+            gap: 40px;
+        }
+
+        .footer-brand h3 {
+            color: white;
+
+            font-size: 22px;
+
+            margin-bottom: 12px;
+        }
+
+        .footer-brand h3 span {
+            color: var(--orange);
+        }
+
+        .footer-brand p {
+            max-width: 330px;
+
+            color: #888;
+
+            font-size: 12px;
+
+            line-height: 1.8;
+        }
+
+        footer h4 {
+            color: white;
+
+            font-size: 13px;
+
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            display: block;
+
+            color: #999;
+
+            font-size: 12px;
+
+            margin-bottom: 9px;
+
+            transition: 0.2s ease;
+        }
+
+        footer a:hover {
+            color: var(--orange);
+        }
+
+        .footer-bottom {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+            margin-top: 45px;
+
+            padding-top: 20px;
+
+            border-top:
+                1px solid #292929;
+        }
+
+        .copyright,
+        .tagline {
+            color: #666;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================================
+           REVEAL
+        ========================================================= */
+
+        .reveal {
+            opacity: 0;
+
+            transform:
+                translateY(25px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 950px) {
+
+            .menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+
+                gap: 50px;
+            }
+
+            .hero-content {
+                text-align: center;
+
+                margin: 0 auto;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .steps {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .application-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .application-info {
+                position: static;
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .container {
+                width:
+                    min(100% - 28px, var(--max-width));
+            }
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .section-header h2 {
+                font-size: 32px;
+            }
+
+            nav {
+                height: 70px;
+            }
+
+            .logo-box {
+                width: 40px;
+                height: 40px;
+            }
+
+            .logo-text {
+                font-size: 19px;
+            }
+
+            .hero {
+                padding: 65px 0 75px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+
+                letter-spacing: -1.7px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .hero-card {
+                padding: 30px;
+            }
+
+            .trust-inner {
+                grid-template-columns: 1fr;
+
+                gap: 5px;
+            }
+
+            .steps,
+            .benefit-grid,
+            .requirements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .application-form {
+                padding: 25px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full {
+                grid-column: auto;
+            }
+
+            .cta {
+                padding: 75px 0;
+            }
+
+            .cta h2 {
+                font-size: 34px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <div class="logo-box">
+                    KE
+                </div>
+
+                <div class="logo-text">
+                    Kazi<span>Eats</span>
+                </div>
+
+            </a>
+
+
+            <div class="menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="#how">
+                    How It Works
+                </a>
+
+                <a href="#requirements">
+                    Requirements
+                </a>
+
+                <a href="#application">
+                    Apply
+                </a>
+
+                <a href="restaurant.html">
+                    Become a Restaurant
+                </a>
+
+            </div>
+
+
+            <a
+                href="#application"
+                class="nav-button"
+            >
+                Become a Driver
+            </a>
+
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuButton"
+                aria-label="Open menu"
+                type="button"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+
+            <div class="hero-content reveal">
+
+                <div class="hero-badge">
+
+                    <span class="hero-dot"></span>
+
+                    KaziEats Driver Programme
+
+                </div>
+
+
+                <h1>
+
+                    Deliver With
+                    <span>KaziEats.</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Become a KaziEats delivery driver and help
+                    customers receive their favourite meals while
+                    earning through deliveries in your local community.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#application"
+                        class="btn btn-primary"
+                    >
+                        Apply Now
+                    </a>
+
+                    <a
+                        href="#requirements"
+                        class="btn btn-secondary"
+                    >
+                        View Requirements
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card-wrapper reveal">
+
+                <div class="hero-card">
+
+                    <div class="hero-card-content">
+
+                        <h3>
+                            Drive. Deliver. Earn.
+                        </h3>
+
+                        <p>
+                            Join the KaziEats delivery network
+                            and help connect local restaurants
+                            with customers.
+                        </p>
+
+
+                        <div class="earnings">
+
+                            <div class="earning-box">
+
+                                <strong>
+                                    Flexible
+                                </strong>
+
+                                <span>
+                                    Delivery opportunities
+                                </span>
+
+                            </div>
+
+
+                            <div class="earning-box">
+
+                                <strong>
+                                    Local
+                                </strong>
+
+                                <span>
+                                    Deliver in your area
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TRUST BAR
+========================================================= -->
+
+<section class="trust-bar">
+
+    <div class="container">
+
+        <div class="trust-inner">
+
+
+            <div class="trust-item">
+
+                <strong>
+                    Local Deliveries
+                </strong>
+
+                <span>
+                    Deliver meals within your community
+                </span>
+
+            </div>
+
+
+            <div class="trust-item">
+
+                <strong>
+                    Flexible Opportunities
+                </strong>
+
+                <span>
+                    Delivery opportunities when available
+                </span>
+
+            </div>
+
+
+            <div class="trust-item">
+
+                <strong>
+                    KaziEats Driver App
+                </strong>
+
+                <span>
+                    Manage your deliveries through our driver platform
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section
+    class="section"
+    id="how"
+>
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                How It Works
+            </div>
+
+            <h2>
+                Become A KaziEats Driver
+            </h2>
+
+            <p>
+                Our application process is designed to keep
+                driver onboarding simple and straightforward.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step reveal">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Apply Online
+                </h3>
+
+                <p>
+                    Complete the driver application form
+                    with your personal and vehicle details.
+                </p>
+
+            </div>
+
+
+            <div class="step reveal">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Application Review
+                </h3>
+
+                <p>
+                    Our team reviews your information and
+                    contacts you regarding the next steps.
+                </p>
+
+            </div>
+
+
+            <div class="step reveal">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Get Approved
+                </h3>
+
+                <p>
+                    Once approved, you'll receive instructions
+                    for accessing the KaziEats driver platform.
+                </p>
+
+            </div>
+
+
+            <div class="step reveal">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <h3>
+                    Start Delivering
+                </h3>
+
+                <p>
+                    Connect with available delivery opportunities
+                    and start serving customers.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BENEFITS
+========================================================= -->
+
+<section class="section benefits-section">
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Why Drive With KaziEats?
+            </div>
+
+            <h2>
+                Built For Local Drivers
+            </h2>
+
+            <p>
+                Become part of a local delivery network connecting
+                customers, restaurants and drivers.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-grid">
+
+
+            <div class="benefit-card reveal">
+
+                <div class="benefit-number">
+                    01
+                </div>
+
+                <h3>
+                    Local Delivery
+                </h3>
+
+                <p>
+                    Deliver food to customers within the areas
+                    served by the KaziEats platform.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card reveal">
+
+                <div class="benefit-number">
+                    02
+                </div>
+
+                <h3>
+                    Flexible Opportunities
+                </h3>
+
+                <p>
+                    Take advantage of available delivery
+                    opportunities based on platform demand.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card reveal">
+
+                <div class="benefit-number">
+                    03
+                </div>
+
+                <h3>
+                    Driver Platform
+                </h3>
+
+                <p>
+                    Approved drivers receive access to the
+                    dedicated KaziEats driver application.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card reveal">
+
+                <div class="benefit-number">
+                    04
+                </div>
+
+                <h3>
+                    Delivery Tracking
+                </h3>
+
+                <p>
+                    Use the driver platform to manage assigned
+                    deliveries and update delivery status.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card reveal">
+
+                <div class="benefit-number">
+                    05
+                </div>
+
+                <h3>
+                    Growing Network
+                </h3>
+
+                <p>
+                    Join a delivery network connecting local
+                    restaurants with customers.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card reveal">
+
+                <div class="benefit-number">
+                    06
+                </div>
+
+                <h3>
+                    Local Business Support
+                </h3>
+
+                <p>
+                    Help local restaurants reach customers while
+                    supporting the growth of your community.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     REQUIREMENTS
+========================================================= -->
+
+<section
+    class="section requirements-section"
+    id="requirements"
+>
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Driver Requirements
+            </div>
+
+            <h2>
+                Before You Apply
+            </h2>
+
+            <p>
+                Make sure you have the information and equipment
+                required to become a KaziEats driver.
+            </p>
+
+        </div>
+
+
+        <div class="requirements-grid">
+
+
+            <div class="requirement reveal">
+
+                <div class="requirement-icon">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Valid Contact Details
+                    </h3>
+
+                    <p>
+                        You must provide an active phone number
+                        and email address where we can contact you.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="requirement reveal">
+
+                <div class="requirement-icon">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Smartphone
+                    </h3>
+
+                    <p>
+                        Drivers need a compatible smartphone to
+                        use the KaziEats driver application.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="requirement reveal">
+
+                <div class="requirement-icon">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Delivery Vehicle
+                    </h3>
+
+                    <p>
+                        Select the vehicle you intend to use
+                        when completing your application.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="requirement reveal">
+
+                <div class="requirement-icon">
+                    04
+                </div>
+
+                <div>
+
+                    <h3>
+                        Driver Information
+                    </h3>
+
+                    <p>
+                        Provide accurate personal and vehicle
+                        information during the application process.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     APPLICATION
+========================================================= -->
+
+<section
+    class="section application-section"
+    id="application"
+>
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Driver Application
+            </div>
+
+            <h2>
+                Apply To Become A Driver
+            </h2>
+
+            <p>
+                Complete the form below. When you submit it,
+                WhatsApp will open with your application already
+                prepared for the KaziEats team.
+            </p>
+
+        </div>
+
+
+        <div class="application-grid">
+
+
+            <!-- INFORMATION -->
+
+            <div class="application-info reveal">
+
+                <h3>
+                    Ready To Drive?
+                </h3>
+
+                <p>
+                    Please provide accurate information so our
+                    team can review your application and contact
+                    you about the onboarding process.
+                </p>
+
+
+                <div class="application-note">
+
+                    <strong>
+                        Step 1
+                    </strong>
+
+                    <span>
+                        Complete the driver application form.
+                    </span>
+
+                </div>
+
+
+                <div class="application-note">
+
+                    <strong>
+                        Step 2
+                    </strong>
+
+                    <span>
+                        Click the submit button.
+                    </span>
+
+                </div>
+
+
+                <div class="application-note">
+
+                    <strong>
+                        Step 3
+                    </strong>
+
+                    <span>
+                        WhatsApp will open with your application
+                        automatically prepared.
+                    </span>
+
+                </div>
+
+
+                <div class="application-note">
+
+                    <strong>
+                        Step 4
+                    </strong>
+
+                    <span>
+                        Press Send in WhatsApp to send your
+                        application to KaziEats.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form
+                class="application-form reveal"
+                id="driverApplicationForm"
+            >
+
+
+                <h3>
+                    Driver Details
+                </h3>
+
+                <p>
+                    Complete all required fields before submitting.
+                </p>
+
+
+                <div
+                    id="formStatus"
+                    class="form-status"
+                    role="alert"
+                    aria-live="polite"
+                ></div>
+
+
+                <div class="form-grid">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Full Name
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="Full Name"
+                            placeholder="e.g. John Mokoena"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ID NUMBER -->
+
+                    <div class="form-group">
+
+                        <label>
+                            ID Number
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="idNumber"
+                            name="ID Number"
+                            placeholder="Enter your ID number"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Email Address
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="Email Address"
+                            placeholder="driver@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Phone Number
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="Phone Number"
+                            placeholder="+27 61 237 0716"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- AREA -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Area / Location
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="area"
+                            name="Area / Location"
+                            placeholder="e.g. Soshanguve"
+                            autocomplete="address-level2"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- VEHICLE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Vehicle Type
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="vehicleType"
+                            name="Vehicle Type"
+                            required
+                        >
+
+                            <option value="">
+                                Select vehicle
+                            </option>
+
+                            <option value="Car">
+                                Car
+                            </option>
+
+                            <option value="Motorcycle">
+                                Motorcycle
+                            </option>
+
+                            <option value="Scooter">
+                                Scooter
+                            </option>
+
+                            <option value="Bicycle">
+                                Bicycle
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- VEHICLE MODEL -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Vehicle Make / Model
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="vehicleModel"
+                            name="Vehicle Make / Model"
+                            placeholder="e.g. Toyota Etios"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- VEHICLE REGISTRATION -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Vehicle Registration
+                        </label>
+
+                        <input
+                            type="text"
+                            id="vehicleRegistration"
+                            name="Vehicle Registration"
+                            placeholder="e.g. ABC 123 GP"
+                        >
+
+                    </div>
+
+
+                    <!-- DRIVER EXPERIENCE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Delivery Experience
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="experience"
+                            name="Delivery Experience"
+                            required
+                        >
+
+                            <option value="">
+                                Select experience
+                            </option>
+
+                            <option value="No previous delivery experience">
+                                No previous delivery experience
+                            </option>
+
+                            <option value="Less than 1 year">
+                                Less than 1 year
+                            </option>
+
+                            <option value="1 - 2 years">
+                                1 - 2 years
+                            </option>
+
+                            <option value="2+ years">
+                                2+ years
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- AVAILABILITY -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Preferred Availability
+                            <span>*</span>
+                        </label>
+
+                        <select
+                            id="availability"
+                            name="Preferred Availability"
+                            required
+                        >
+
+                            <option value="">
+                                Select availability
+                            </option>
+
+                            <option value="Weekdays">
+                                Weekdays
+                            </option>
+
+                            <option value="Weekends">
+                                Weekends
+                            </option>
+
+                            <option value="Evenings">
+                                Evenings
+                            </option>
+
+                            <option value="Flexible">
+                                Flexible
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ADDITIONAL INFORMATION -->
+
+                    <div class="form-group full">
+
+                        <label>
+                            Additional Information
+                        </label>
+
+                        <textarea
+                            id="additionalInfo"
+                            name="Additional Information"
+                            placeholder="Tell us anything else we should know about your application."
+                        ></textarea>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                        id="submitDriverApplication"
+                    >
+                        Continue To WhatsApp
+                    </button>
+
+
+                    <p class="form-disclaimer">
+                        By submitting this application, you agree
+                        that KaziEats may contact you regarding your
+                        driver application.
+                    </p>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section faq-section">
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <div class="section-label">
+                Driver FAQ
+            </div>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+            <div class="faq-item reveal">
+
+                <h3>
+                    How do I apply to become a KaziEats driver?
+                </h3>
+
+                <p>
+                    Complete the application form on this page
+                    and continue to WhatsApp. Your application
+                    information will already be prepared in the
+                    WhatsApp message.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <h3>
+                    Does KaziEats provide a driver application?
+                </h3>
+
+                <p>
+                    Approved drivers receive access to the
+                    KaziEats driver platform for managing
+                    deliveries.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <h3>
+                    What vehicle can I use?
+                </h3>
+
+                <p>
+                    You can indicate your vehicle type during
+                    the application process. Available vehicle
+                    options may depend on the delivery requirements
+                    in your operating area.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <h3>
+                    Can I apply if I have no delivery experience?
+                </h3>
+
+                <p>
+                    Yes. The application allows you to indicate
+                    that you have no previous delivery experience.
+                    Your application will still be reviewed by
+                    the KaziEats team.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item reveal">
+
+                <h3>
+                    What happens after I apply?
+                </h3>
+
+                <p>
+                    The KaziEats team reviews your information
+                    and contacts you regarding the next steps
+                    in the driver onboarding process.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+    <div class="container reveal">
+
+        <h2>
+            Ready To Deliver With KaziEats?
+        </h2>
+
+        <p>
+            Complete your application and join the KaziEats
+            delivery network.
+        </p>
+
+        <a
+            href="#application"
+            class="cta-button"
+        >
+            Apply To Become A Driver
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <h3>
+                    Kazi<span>Eats</span>
+                </h3>
+
+                <p>
+                    South Africa's local food delivery platform
+                    connecting customers, restaurants and
+                    independent delivery drivers.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About Us
+                </a>
+
+                <a href="index.html#contact">
+                    Contact
+                </a>
+
+                <a href="restaurant.html">
+                    Become a Restaurant
+                </a>
+
+                <a href="driver.html">
+                    Become a Driver
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Legal
+                </h4>
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms & Conditions
+                </a>
+
+                <a href="refund.html">
+                    Refund Policy
+                </a>
+
+                <a href="delivery-policy.html">
+                    Delivery Policy
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="mailto:Kazieats012@gmail.com">
+                    Kazieats012@gmail.com
+                </a>
+
+                <a href="tel:+27612370716">
+                    +27 61 237 0716
+                </a>
+
+                <a href="tel:+27683687197">
+                    +27 68 368 7197
+                </a>
+
+                <a href="tel:+27816335609">
+                    +27 81 633 5609
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="copyright">
+
+                © <span id="year"></span>
+                KaziEats. All Rights Reserved.
+
+            </div>
+
+
+            <div class="tagline">
+
+                Local Flavor. Delivered Fast.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+    /* =========================================================
+       CURRENT YEAR
+    ========================================================= */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* =========================================================
+       SCROLL REVEAL
+    ========================================================= */
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+    const revealObserver =
+        new IntersectionObserver(
+            (entries, observer) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("visible");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(element => {
+
+        revealObserver.observe(element);
+
+    });
+
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    const mobileButton =
+        document.getElementById("mobileMenuButton");
+
+    const menu =
+        document.querySelector(".menu");
+
+
+    mobileButton.addEventListener("click", () => {
+
+        const isOpen =
+            menu.style.display === "flex";
+
+
+        if (isOpen) {
+
+            menu.style.display = "none";
+
+            return;
+
+        }
+
+
+        menu.style.display = "flex";
+
+        menu.style.position = "absolute";
+
+        menu.style.top = "70px";
+
+        menu.style.left = "14px";
+
+        menu.style.right = "14px";
+
+        menu.style.padding = "20px";
+
+        menu.style.flexDirection = "column";
+
+        menu.style.gap = "17px";
+
+        menu.style.background = "white";
+
+        menu.style.border =
+            "1px solid #eeeeee";
+
+        menu.style.borderRadius =
+            "18px";
+
+        menu.style.boxShadow =
+            "0 20px 50px rgba(0,0,0,.10)";
+
+    });
+
+
+    /* =========================================================
+       CLOSE MOBILE MENU
+    ========================================================= */
+
+    document.querySelectorAll(".menu a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            if (window.innerWidth <= 950) {
+
+                menu.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+
+    /* =========================================================
+       DRIVER APPLICATION
+       
+       WHATSAPP DESTINATION:
+       +27 61 237 0716
+    ========================================================= */
+
+    const driverForm =
+        document.getElementById(
+            "driverApplicationForm"
+        );
+
+
+    const submitButton =
+        document.getElementById(
+            "submitDriverApplication"
+        );
+
+
+    const formStatus =
+        document.getElementById(
+            "formStatus"
+        );
+
+
+    driverForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            /* ---------------------------------------------
+               VALIDATE FORM
+            --------------------------------------------- */
+
+            if (!driverForm.checkValidity()) {
+
+                driverForm.reportValidity();
+
+                return;
+
+            }
+
+
+            /* ---------------------------------------------
+               GET FORM VALUES
+            --------------------------------------------- */
+
+            const fullName =
+                document.getElementById("fullName").value.trim();
+
+            const idNumber =
+                document.getElementById("idNumber").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const phone =
+                document.getElementById("phone").value.trim();
+
+            const area =
+                document.getElementById("area").value.trim();
+
+            const vehicleType =
+                document.getElementById("vehicleType").value;
+
+            const vehicleModel =
+                document.getElementById("vehicleModel").value.trim();
+
+            const vehicleRegistration =
+                document
+                    .getElementById("vehicleRegistration")
+                    .value
+                    .trim();
+
+            const experience =
+                document.getElementById("experience").value;
+
+            const availability =
+                document.getElementById("availability").value;
+
+            const additionalInfo =
+                document
+                    .getElementById("additionalInfo")
+                    .value
+                    .trim();
+
+
+            /* ---------------------------------------------
+               BUILD WHATSAPP MESSAGE
+            --------------------------------------------- */
+
+            const message =
+
+`*KAZIEATS DRIVER APPLICATION*
+
+Hello KaziEats, I would like to apply to become a delivery driver.
+
+*PERSONAL DETAILS*
+
+Full Name:
+${fullName}
+
+ID Number:
+${idNumber}
+
+Email:
+${email}
+
+Phone:
+${phone}
+
+Area / Location:
+${area}
+
+*VEHICLE DETAILS*
+
+Vehicle Type:
+${vehicleType}
+
+Vehicle Make / Model:
+${vehicleModel}
+
+Vehicle Registration:
+${vehicleRegistration || "Not provided"}
+
+*DRIVER EXPERIENCE*
+
+Delivery Experience:
+${experience}
+
+Preferred Availability:
+${availability}
+
+*ADDITIONAL INFORMATION*
+
+${additionalInfo || "None provided"}
+
+I am ready to provide any additional information required for my driver application.
+
+Thank you.
+KaziEats Driver Application`;
+
+
+            /* ---------------------------------------------
+               ENCODE MESSAGE
+            --------------------------------------------- */
+
+            const encodedMessage =
+                encodeURIComponent(message);
+
+
+            /* ---------------------------------------------
+               WHATSAPP NUMBER
+               
+               IMPORTANT:
+               Must be international format
+               without + or spaces.
+            --------------------------------------------- */
+
+            const whatsappNumber =
+                "27612370716";
+
+
+            const whatsappURL =
+                `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+
+            /* ---------------------------------------------
+               SHOW STATUS
+            --------------------------------------------- */
+
+            formStatus.className =
+                "form-status success";
+
+            formStatus.innerHTML = `
+                <strong>Application ready.</strong><br>
+                WhatsApp is opening with your application
+                already filled in. Please review the message
+                and press Send.
+            `;
+
+
+            /* ---------------------------------------------
+               BUTTON STATE
+            --------------------------------------------- */
+
+            submitButton.disabled = true;
+
+            submitButton.textContent =
+                "Opening WhatsApp...";
+
+
+            /* ---------------------------------------------
+               OPEN WHATSAPP
+            --------------------------------------------- */
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+
+            /* ---------------------------------------------
+               RESTORE BUTTON
+            --------------------------------------------- */
+
+            setTimeout(() => {
+
+                submitButton.disabled = false;
+
+                submitButton.textContent =
+                    "Continue To WhatsApp";
+
+            }, 2500);
+
+
+            /* ---------------------------------------------
+               SCROLL STATUS
+            --------------------------------------------- */
+
+            formStatus.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+        }
+    );
+
+
+</script>
+
+
+</body>
+
+</html>

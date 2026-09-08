@@ -1,0 +1,1599 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kazi Eats | Delivery Policy</title>
+
+    <meta
+        name="description"
+        content="Kazi Eats Delivery Policy covering delivery areas, hours, fees, payments, delivery times, refunds, customer responsibilities and delivery support."
+    >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: #ffffff;
+            color: #171717;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .header-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 18px 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            text-decoration: none;
+
+            font-size: 24px;
+            font-weight: 900;
+
+            letter-spacing: -0.8px;
+
+            color: #111111;
+        }
+
+        .logo span {
+            color: #ff5c00;
+        }
+
+        .back-button {
+            text-decoration: none;
+
+            color: #111111;
+
+            border: 1px solid #dddddd;
+
+            padding: 9px 18px;
+
+            border-radius: 999px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background: #111111;
+            color: #ffffff;
+            border-color: #111111;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background: #fafafa;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .hero-container {
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 80px 24px 70px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 16px;
+
+            color: #ff5c00;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.4px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 6vw, 64px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2.5px;
+
+            color: #111111;
+
+            margin-bottom: 18px;
+        }
+
+        .hero-subtitle {
+            max-width: 700px;
+
+            color: #555555;
+
+            font-size: 17px;
+
+            margin-bottom: 18px;
+        }
+
+        .company-details {
+            color: #777777;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+           CONTENT
+        ========================= */
+
+        .page {
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 60px 24px 100px;
+        }
+
+        /* =========================
+           TABLE OF CONTENTS
+        ========================= */
+
+        .contents {
+            background: #f7f7f7;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 18px;
+
+            padding: 28px;
+
+            margin-bottom: 60px;
+        }
+
+        .contents h2 {
+            font-size: 18px;
+
+            margin-bottom: 18px;
+
+            color: #111111;
+        }
+
+        .contents ul {
+            list-style: none;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 10px 24px;
+        }
+
+        .contents a {
+            color: #555555;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            transition: color 0.2s ease;
+        }
+
+        .contents a:hover {
+            color: #ff5c00;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .policy-section {
+            padding: 50px 0;
+
+            border-top: 1px solid #eeeeee;
+
+            scroll-margin-top: 100px;
+        }
+
+        .policy-section:first-of-type {
+            border-top: none;
+        }
+
+        .policy-section h2 {
+            font-size: 28px;
+
+            line-height: 1.25;
+
+            letter-spacing: -0.6px;
+
+            color: #111111;
+
+            margin-bottom: 20px;
+        }
+
+        .policy-section h3 {
+            font-size: 18px;
+
+            color: #111111;
+
+            margin: 28px 0 8px;
+        }
+
+        .policy-section p {
+            color: #555555;
+
+            margin-bottom: 16px;
+        }
+
+        .policy-section ul {
+            padding-left: 22px;
+
+            margin: 18px 0;
+
+            color: #555555;
+        }
+
+        .policy-section li {
+            margin-bottom: 10px;
+
+            padding-left: 5px;
+        }
+
+        .policy-section strong {
+            color: #222222;
+        }
+
+        /* =========================
+           INFO CARDS
+        ========================= */
+
+        .info-card {
+            background: #f7f7f7;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 16px;
+
+            padding: 24px;
+
+            margin: 24px 0;
+        }
+
+        .info-card-title {
+            font-size: 15px;
+
+            font-weight: 800;
+
+            color: #111111;
+
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            margin: 0;
+        }
+
+        /* =========================
+           FEE / PAYMENT GRID
+        ========================= */
+
+        .payment-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 16px;
+
+            margin: 25px 0;
+        }
+
+        .payment-card {
+            padding: 24px;
+
+            background: #fafafa;
+
+            border: 1px solid #e8e8e8;
+
+            border-radius: 16px;
+        }
+
+        .payment-card h3 {
+            margin: 0 0 8px;
+
+            font-size: 17px;
+        }
+
+        .payment-card p {
+            margin: 0;
+
+            font-size: 14px;
+        }
+
+        /* =========================
+           IMPORTANT BOX
+        ========================= */
+
+        .important-box {
+            background: #fff8f4;
+
+            border-left: 4px solid #ff5c00;
+
+            border-radius: 0 12px 12px 0;
+
+            padding: 20px;
+
+            margin-top: 24px;
+        }
+
+        .important-box p {
+            margin: 0;
+
+            color: #555555;
+
+            font-size: 14px;
+        }
+
+        /* =========================
+           SUCCESS BOX
+        ========================= */
+
+        .success-box {
+            background: #f6f6f6;
+
+            border: 1px solid #e5e5e5;
+
+            border-radius: 16px;
+
+            padding: 25px;
+
+            margin-top: 24px;
+        }
+
+        .success-box h3 {
+            margin: 0 0 10px;
+
+            color: #111111;
+        }
+
+        .success-box p {
+            margin: 0;
+
+            color: #555555;
+        }
+
+        /* =========================
+           CONTACT BOX
+        ========================= */
+
+        .contact-box {
+            background: #111111;
+
+            color: #ffffff;
+
+            border-radius: 20px;
+
+            padding: 32px;
+
+            margin-top: 20px;
+        }
+
+        .contact-box h2 {
+            color: #ffffff;
+
+            margin-bottom: 20px;
+        }
+
+        .contact-box p {
+            color: #bdbdbd;
+
+            margin-bottom: 10px;
+        }
+
+        .contact-item {
+            margin-top: 18px;
+        }
+
+        .contact-label {
+            display: block;
+
+            color: #888888;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 4px;
+        }
+
+        .contact-value {
+            color: #ffffff;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            text-decoration: none;
+        }
+
+        .contact-value:hover {
+            color: #ff7a32;
+        }
+
+        /* =========================
+           BRAND FOOTER NOTICE
+        ========================= */
+
+        .brand-line {
+            text-align: center;
+
+            margin-top: 60px;
+
+            padding-top: 35px;
+
+            border-top: 1px solid #eeeeee;
+        }
+
+        .brand-line strong {
+            color: #111111;
+
+            font-size: 18px;
+
+            letter-spacing: -0.3px;
+        }
+
+        .brand-line span {
+            display: block;
+
+            margin-top: 5px;
+
+            color: #ff5c00;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.2px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+            background: #111111;
+
+            color: #999999;
+
+            padding: 35px 24px;
+        }
+
+        .footer-container {
+            max-width: 1180px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .footer p {
+            font-size: 13px;
+        }
+
+        .footer-links {
+            display: flex;
+
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #aaaaaa;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            .header-container {
+                padding: 15px 18px;
+            }
+
+            .logo {
+                font-size: 21px;
+            }
+
+            .back-button {
+                padding: 8px 14px;
+
+                font-size: 13px;
+            }
+
+            .hero-container {
+                padding: 55px 20px 50px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1.8px;
+            }
+
+            .hero-subtitle {
+                font-size: 15px;
+            }
+
+            .page {
+                padding: 45px 20px 70px;
+            }
+
+            .contents {
+                padding: 22px;
+            }
+
+            .contents ul {
+                grid-template-columns: 1fr;
+            }
+
+            .policy-section {
+                padding: 40px 0;
+            }
+
+            .policy-section h2 {
+                font-size: 24px;
+            }
+
+            .payment-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 25px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="/" class="logo">
+                KAZI<span>EATS</span>
+            </a>
+
+            <a href="/" class="back-button">
+                Back to Home
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-container">
+
+            <span class="eyebrow">
+                Kazi Eats
+            </span>
+
+            <h1>
+                Delivery Policy
+            </h1>
+
+            <p class="hero-subtitle">
+                How deliveries work on the Kazi Eats platform.
+            </p>
+
+            <div class="company-details">
+
+                <strong>KaziEats (Pty) Ltd</strong><br>
+
+                Registration No: 2026/098701/07<br>
+
+                Soshanguve, Tshwane, Gauteng, South Africa<br>
+
+                Effective Date: 24 July 2026
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="page">
+
+
+        <!-- TABLE OF CONTENTS -->
+
+        <div class="contents">
+
+            <h2>
+                Contents
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="#purpose">
+                        1. Purpose and Scope
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#areas">
+                        2. Delivery Areas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#hours">
+                        3. Delivery Hours
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#times">
+                        4. Delivery Times
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#fees">
+                        5. Delivery Fees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#payment">
+                        6. Payment Methods
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#acceptance">
+                        7. Order Acceptance and Confirmation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#late">
+                        8. Late, Lost, or Damaged Deliveries
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#control">
+                        9. Circumstances Beyond Our Control
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#responsibilities">
+                        10. Customer Responsibilities
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#driver">
+                        11. Driver Conduct and Safety
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#support">
+                        12. Complaints and Support
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#changes">
+                        13. Changes to This Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#law">
+                        14. Governing Law
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- SECTION 1 -->
+
+        <section
+            class="policy-section"
+            id="purpose"
+        >
+
+            <h2>
+                1. Purpose and Scope
+            </h2>
+
+            <p>
+                This Delivery Policy explains how KaziEats delivers orders
+                placed through the Kazi Eats app, including delivery areas,
+                timing, fees, payment options, and what happens if something
+                goes wrong.
+            </p>
+
+            <p>
+                It applies to every order placed on the Kazi Eats platform
+                and forms part of the terms under which KaziEats provides
+                its delivery service to customers.
+            </p>
+
+            <p>
+                This policy should be read together with our
+                <strong>Terms and Conditions</strong> and our
+                <strong>Refund and Cancellation Policy</strong>.
+            </p>
+
+            <p>
+                Where this policy deals specifically with delivery, those
+                other policies deal with account use, order cancellations,
+                and refund processing more broadly.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 2 -->
+
+        <section
+            class="policy-section"
+            id="areas"
+        >
+
+            <h2>
+                2. Delivery Areas
+            </h2>
+
+            <p>
+                KaziEats currently delivers within five defined delivery
+                zones covering Soshanguve, Tshwane.
+            </p>
+
+            <p>
+                Coverage is shown in the app at checkout. If an address
+                falls outside our current delivery zones, the app will let
+                you know before you place your order.
+            </p>
+
+            <div class="info-card">
+
+                <div class="info-card-title">
+                    Delivery Zone Coverage
+                </div>
+
+                <p>
+                    You will not be charged a delivery fee for an order that
+                    KaziEats cannot fulfil because the delivery address is
+                    outside the available delivery zones.
+                </p>
+
+            </div>
+
+            <p>
+                We are actively expanding our delivery zones as our driver
+                network grows. If your area is not currently covered,
+                please check the app periodically as new zones may become
+                available.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 3 -->
+
+        <section
+            class="policy-section"
+            id="hours"
+        >
+
+            <h2>
+                3. Delivery Hours
+            </h2>
+
+            <div class="info-card">
+
+                <div class="info-card-title">
+                    Daily Delivery Hours
+                </div>
+
+                <p>
+                    <strong>11:00 – 17:00, daily</strong>
+                </p>
+
+            </div>
+
+            <p>
+                Orders can only be placed and delivered within these hours.
+                The app will not accept new orders outside of this delivery
+                window.
+            </p>
+
+            <p>
+                Restaurant partners confirm their availability each morning
+                ahead of the delivery window opening. The restaurants and
+                products displayed in the app therefore reflect the
+                availability communicated for that day.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 4 -->
+
+        <section
+            class="policy-section"
+            id="times"
+        >
+
+            <h2>
+                4. Delivery Times
+            </h2>
+
+            <h3>
+                4.1 Target Delivery Time
+            </h3>
+
+            <p>
+                KaziEats aims to deliver every order within one hour of
+                order placement for addresses within our defined delivery
+                zones.
+            </p>
+
+            <p>
+                Where conditions allow, we aim to deliver orders sooner than
+                this target.
+            </p>
+
+            <h3>
+                4.2 What Can Affect Delivery Time
+            </h3>
+
+            <p>
+                Delivery times may be affected by factors outside our direct
+                control, including:
+            </p>
+
+            <ul>
+
+                <li>
+                    Restaurant preparation time.
+                </li>
+
+                <li>
+                    Weather conditions.
+                </li>
+
+                <li>
+                    Road conditions.
+                </li>
+
+                <li>
+                    Load-shedding.
+                </li>
+
+                <li>
+                    Traffic.
+                </li>
+
+                <li>
+                    Unusually high order volumes.
+                </li>
+
+            </ul>
+
+            <p>
+                Where we expect a significant delay, we will try to notify
+                you through the app.
+            </p>
+
+            <h3>
+                4.3 Order Tracking
+            </h3>
+
+            <p>
+                Once your order is confirmed, you can track its status in
+                the app, from restaurant confirmation through to driver
+                dispatch and delivery.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 5 -->
+
+        <section
+            class="policy-section"
+            id="fees"
+        >
+
+            <h2>
+                5. Delivery Fees
+            </h2>
+
+            <p>
+                Delivery fees on KaziEats are calculated based on the
+                distance between the restaurant partner and your delivery
+                address.
+            </p>
+
+            <p>
+                The applicable fee may vary depending on the delivery zone
+                you are ordering to and from.
+            </p>
+
+            <ul>
+
+                <li>
+                    The exact delivery fee for your order is calculated
+                    automatically and shown in the app before you confirm
+                    your order.
+                </li>
+
+                <li>
+                    Delivery fees are separate from the price of your food
+                    order and are clearly itemised at checkout.
+                </li>
+
+                <li>
+                    Delivery fees may be higher during periods of high
+                    demand, adverse weather, or reduced driver availability.
+                </li>
+
+            </ul>
+
+            <div class="important-box">
+
+                <p>
+                    Any delivery-fee adjustment will be reflected in the app
+                    before you confirm payment. You will not be charged a
+                    delivery fee that was not presented to you before
+                    confirmation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 6 -->
+
+        <section
+            class="policy-section"
+            id="payment"
+        >
+
+            <h2>
+                6. Payment Methods
+            </h2>
+
+            <p>
+                KaziEats gives customers a choice of payment methods at
+                checkout, subject to availability.
+            </p>
+
+            <div class="payment-grid">
+
+                <div class="payment-card">
+
+                    <h3>
+                        Cash on Delivery
+                    </h3>
+
+                    <p>
+                        Pay the delivery driver in cash when your order
+                        arrives.
+                    </p>
+
+                </div>
+
+
+                <div class="payment-card">
+
+                    <h3>
+                        Online Payment
+                    </h3>
+
+                    <p>
+                        Pay securely by card or EFT through our payment
+                        partner, Payfast, at the time you place your order.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p>
+                You choose your preferred payment method for each order
+                individually.
+            </p>
+
+            <p>
+                Online payments processed through Payfast are handled
+                securely by Payfast in accordance with Payfast's applicable
+                security standards.
+            </p>
+
+            <p>
+                KaziEats does not store your full card details.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 7 -->
+
+        <section
+            class="policy-section"
+            id="acceptance"
+        >
+
+            <h2>
+                7. Order Acceptance and Confirmation
+            </h2>
+
+            <h3>
+                7.1 Order Confirmation
+            </h3>
+
+            <p>
+                An order is only confirmed once the restaurant partner has
+                accepted it in the app.
+            </p>
+
+            <p>
+                You will receive confirmation together with an estimated
+                delivery time.
+            </p>
+
+            <h3>
+                7.2 Order Changes
+            </h3>
+
+            <p>
+                Once a restaurant has begun preparing your order, changes
+                to the order itself, including items or quantities, can no
+                longer be made.
+            </p>
+
+            <p>
+                If you need to cancel before preparation begins, please
+                refer to our Refund and Cancellation Policy for the
+                applicable process and timeframes.
+            </p>
+
+            <h3>
+                7.3 Unavailable Items
+            </h3>
+
+            <p>
+                If an item in your order becomes unavailable after the
+                restaurant accepts your order, the restaurant or KaziEats
+                support may contact you to arrange a substitution or partial
+                refund for that item.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 8 -->
+
+        <section
+            class="policy-section"
+            id="late"
+        >
+
+            <h2>
+                8. Late, Lost, or Damaged Deliveries
+            </h2>
+
+            <p>
+                We take responsibility for getting your order to you
+                complete and on time, subject to circumstances outside our
+                reasonable control.
+            </p>
+
+            <div class="success-box">
+
+                <h3>
+                    Late Delivery
+                </h3>
+
+                <p>
+                    Where a delivery is significantly delayed beyond our
+                    stated target time due to a failure on our side, and
+                    not because of circumstances outside our control, you
+                    may be entitled to a full refund or a replacement order,
+                    at your choice.
+                </p>
+
+            </div>
+
+
+            <div class="success-box">
+
+                <h3>
+                    Lost Delivery
+                </h3>
+
+                <p>
+                    Where an order has been confirmed as dispatched but
+                    never arrives, you may be entitled to a full refund or
+                    a replacement order.
+                </p>
+
+            </div>
+
+
+            <div class="success-box">
+
+                <h3>
+                    Damaged Delivery
+                </h3>
+
+                <p>
+                    Where an order arrives damaged, spilled, or otherwise
+                    not in a reasonably fit condition to eat, you may be
+                    entitled to a full refund or a replacement order.
+                </p>
+
+            </div>
+
+            <p style="margin-top: 25px;">
+                To claim a refund or replacement, report the issue through
+                the app or to KaziEats support within 24 hours of the
+                delivery window closing.
+            </p>
+
+            <p>
+                Please provide a description of the issue and, where
+                applicable, a photograph for damaged orders.
+            </p>
+
+            <p>
+                We aim to resolve delivery complaints within 48 hours.
+            </p>
+
+            <div class="important-box">
+
+                <p>
+                    This section deals specifically with delivery-related
+                    issues. For cancellations made before an order is
+                    dispatched, and for refund processing timeframes, please
+                    refer to our separate Refund and Cancellation Policy.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 9 -->
+
+        <section
+            class="policy-section"
+            id="control"
+        >
+
+            <h2>
+                9. Circumstances Beyond Our Control
+            </h2>
+
+            <p>
+                KaziEats will not be held responsible for delays or failed
+                deliveries caused by circumstances reasonably beyond our
+                control.
+            </p>
+
+            <p>
+                These circumstances may include:
+            </p>
+
+            <ul>
+
+                <li>
+                    Load-shedding.
+                </li>
+
+                <li>
+                    Severe weather.
+                </li>
+
+                <li>
+                    Road closures.
+                </li>
+
+                <li>
+                    Civil unrest.
+                </li>
+
+                <li>
+                    Public safety incidents.
+                </li>
+
+                <li>
+                    Other circumstances that materially affect delivery
+                    operations and are outside our reasonable control.
+                </li>
+
+            </ul>
+
+            <p>
+                Where such circumstances affect a delivery, we will act in
+                good faith to keep you informed and to resolve the matter
+                fairly, even though a full refund may not automatically
+                apply.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 10 -->
+
+        <section
+            class="policy-section"
+            id="responsibilities"
+        >
+
+            <h2>
+                10. Customer Responsibilities
+            </h2>
+
+            <p>
+                To help us deliver your order successfully, please:
+            </p>
+
+            <ul>
+
+                <li>
+                    Provide a complete and accurate delivery address,
+                    including relevant landmarks that may help our drivers
+                    find you.
+                </li>
+
+                <li>
+                    Provide a working contact number and remain reasonably
+                    reachable during the delivery window.
+                </li>
+
+                <li>
+                    Be available to receive your order at the address
+                    provided, or nominate someone else to receive it on
+                    your behalf.
+                </li>
+
+            </ul>
+
+            <div class="important-box">
+
+                <p>
+                    Where a delivery fails because the address provided was
+                    incorrect, or because no one was available to receive
+                    the order after reasonable attempts by the driver to
+                    make contact, KaziEats reserves the right to treat the
+                    order as delivered for payment purposes.
+                </p>
+
+            </div>
+
+            <p style="margin-top: 20px;">
+                Any redelivery resulting from an incorrect address or
+                unsuccessful delivery attempt may be subject to an
+                additional delivery fee.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 11 -->
+
+        <section
+            class="policy-section"
+            id="driver"
+        >
+
+            <h2>
+                11. Driver Conduct and Safety
+            </h2>
+
+            <p>
+                KaziEats drivers are expected to treat every customer,
+                restaurant partner, and member of the public with respect.
+            </p>
+
+            <p>
+                Drivers are also expected to handle every order with
+                reasonable care.
+            </p>
+
+            <p>
+                If you have any concern regarding a driver's conduct,
+                please report it through the app or contact KaziEats
+                support.
+            </p>
+
+            <p>
+                Every report is reviewed, and KaziEats takes driver conduct
+                seriously as a condition of remaining active on the
+                platform.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 12 -->
+
+        <section
+            class="policy-section"
+            id="support"
+        >
+
+            <div class="contact-box">
+
+                <h2>
+                    12. Complaints and Support
+                </h2>
+
+                <p>
+                    If you have any question or issue relating to a delivery,
+                    our support team is here to help.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        Email
+                    </span>
+
+                    <a
+                        class="contact-value"
+                        href="mailto:Kazieats012@gmail.com"
+                    >
+                        Kazieats012@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        Phone
+                    </span>
+
+                    <a
+                        class="contact-value"
+                        href="tel:+27612370716"
+                    >
+                        +27 61 237 0716
+                    </a>
+
+                    <br>
+
+                    <a
+                        class="contact-value"
+                        href="tel:+27683687197"
+                    >
+                        +27 68 368 7197
+                    </a>
+
+                    <br>
+
+                    <a
+                        class="contact-value"
+                        href="tel:+27816335609"
+                    >
+                        +27 81 633 5609
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 13 -->
+
+        <section
+            class="policy-section"
+            id="changes"
+        >
+
+            <h2>
+                13. Changes to This Policy
+            </h2>
+
+            <p>
+                KaziEats may update this Delivery Policy from time to time,
+                including to reflect new delivery zones, changed delivery
+                hours, updated fee structures, or changes to our delivery
+                operations.
+            </p>
+
+            <p>
+                The most current version will always be available in the
+                Kazi Eats app and on our website.
+            </p>
+
+            <p>
+                Continued use of the Kazi Eats platform after an update
+                takes effect constitutes acceptance of the updated policy
+                to the extent permitted by applicable law.
+            </p>
+
+        </section>
+
+
+        <!-- SECTION 14 -->
+
+        <section
+            class="policy-section"
+            id="law"
+        >
+
+            <h2>
+                14. Governing Law
+            </h2>
+
+            <p>
+                This Delivery Policy is governed by the laws of the
+                Republic of South Africa, including the Consumer Protection
+                Act 68 of 2008, to the extent applicable to KaziEats'
+                services.
+            </p>
+
+        </section>
+
+
+        <!-- BRAND -->
+
+        <div class="brand-line">
+
+            <strong>
+                KaziEats (Pty) Ltd
+            </strong>
+
+            <span>
+                Local Flavor, Delivered Fast.
+            </span>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <p>
+                © 2026 Kazi Eats. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="/privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="/terms.html">
+                    Terms of Service
+                </a>
+
+                <a href="/delivery-policy.html">
+                    Delivery Policy
+                </a>
+
+                <a href="/">
+                    Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
